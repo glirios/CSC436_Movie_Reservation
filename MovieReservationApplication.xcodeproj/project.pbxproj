@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D78830021FB50CD2006DAD8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78830011FB50CD2006DAD8F /* AppDelegate.swift */; };
+		D78830041FB50CD2006DAD8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78830031FB50CD2006DAD8F /* ViewController.swift */; };
+		D78830071FB50CD2006DAD8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78830051FB50CD2006DAD8F /* Main.storyboard */; };
+		D78830091FB50CD2006DAD8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78830081FB50CD2006DAD8F /* Assets.xcassets */; };
+		D788300C1FB50CD2006DAD8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D788300A1FB50CD2006DAD8F /* LaunchScreen.storyboard */; };
+		D78830171FB50CD2006DAD8F /* MovieReservationApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78830161FB50CD2006DAD8F /* MovieReservationApplicationTests.swift */; };
+		D78830221FB50CD3006DAD8F /* MovieReservationApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78830211FB50CD3006DAD8F /* MovieReservationApplicationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D78830131FB50CD2006DAD8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7882FF61FB50CD2006DAD8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7882FFD1FB50CD2006DAD8F;
+			remoteInfo = MovieReservationApplication;
+		};
+		D788301E1FB50CD3006DAD8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7882FF61FB50CD2006DAD8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7882FFD1FB50CD2006DAD8F;
+			remoteInfo = MovieReservationApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7882FFE1FB50CD2006DAD8F /* MovieReservationApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieReservationApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78830011FB50CD2006DAD8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D78830031FB50CD2006DAD8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D78830061FB50CD2006DAD8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D78830081FB50CD2006DAD8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D788300B1FB50CD2006DAD8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D788300D1FB50CD2006DAD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D78830121FB50CD2006DAD8F /* MovieReservationApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieReservationApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78830161FB50CD2006DAD8F /* MovieReservationApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReservationApplicationTests.swift; sourceTree = "<group>"; };
+		D78830181FB50CD2006DAD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D788301D1FB50CD2006DAD8F /* MovieReservationApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieReservationApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78830211FB50CD3006DAD8F /* MovieReservationApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReservationApplicationUITests.swift; sourceTree = "<group>"; };
+		D78830231FB50CD3006DAD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7882FFB1FB50CD2006DAD8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788300F1FB50CD2006DAD8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788301A1FB50CD2006DAD8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7882FF51FB50CD2006DAD8F = {
+			isa = PBXGroup;
+			children = (
+				D78830001FB50CD2006DAD8F /* MovieReservationApplication */,
+				D78830151FB50CD2006DAD8F /* MovieReservationApplicationTests */,
+				D78830201FB50CD3006DAD8F /* MovieReservationApplicationUITests */,
+				D7882FFF1FB50CD2006DAD8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7882FFF1FB50CD2006DAD8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7882FFE1FB50CD2006DAD8F /* MovieReservationApplication.app */,
+				D78830121FB50CD2006DAD8F /* MovieReservationApplicationTests.xctest */,
+				D788301D1FB50CD2006DAD8F /* MovieReservationApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D78830001FB50CD2006DAD8F /* MovieReservationApplication */ = {
+			isa = PBXGroup;
+			children = (
+				D78830011FB50CD2006DAD8F /* AppDelegate.swift */,
+				D78830031FB50CD2006DAD8F /* ViewController.swift */,
+				D78830051FB50CD2006DAD8F /* Main.storyboard */,
+				D78830081FB50CD2006DAD8F /* Assets.xcassets */,
+				D788300A1FB50CD2006DAD8F /* LaunchScreen.storyboard */,
+				D788300D1FB50CD2006DAD8F /* Info.plist */,
+			);
+			path = MovieReservationApplication;
+			sourceTree = "<group>";
+		};
+		D78830151FB50CD2006DAD8F /* MovieReservationApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				D78830161FB50CD2006DAD8F /* MovieReservationApplicationTests.swift */,
+				D78830181FB50CD2006DAD8F /* Info.plist */,
+			);
+			path = MovieReservationApplicationTests;
+			sourceTree = "<group>";
+		};
+		D78830201FB50CD3006DAD8F /* MovieReservationApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D78830211FB50CD3006DAD8F /* MovieReservationApplicationUITests.swift */,
+				D78830231FB50CD3006DAD8F /* Info.plist */,
+			);
+			path = MovieReservationApplicationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7882FFD1FB50CD2006DAD8F /* MovieReservationApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D78830261FB50CD3006DAD8F /* Build configuration list for PBXNativeTarget "MovieReservationApplication" */;
+			buildPhases = (
+				D7882FFA1FB50CD2006DAD8F /* Sources */,
+				D7882FFB1FB50CD2006DAD8F /* Frameworks */,
+				D7882FFC1FB50CD2006DAD8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovieReservationApplication;
+			productName = MovieReservationApplication;
+			productReference = D7882FFE1FB50CD2006DAD8F /* MovieReservationApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D78830111FB50CD2006DAD8F /* MovieReservationApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D78830291FB50CD3006DAD8F /* Build configuration list for PBXNativeTarget "MovieReservationApplicationTests" */;
+			buildPhases = (
+				D788300E1FB50CD2006DAD8F /* Sources */,
+				D788300F1FB50CD2006DAD8F /* Frameworks */,
+				D78830101FB50CD2006DAD8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D78830141FB50CD2006DAD8F /* PBXTargetDependency */,
+			);
+			name = MovieReservationApplicationTests;
+			productName = MovieReservationApplicationTests;
+			productReference = D78830121FB50CD2006DAD8F /* MovieReservationApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D788301C1FB50CD2006DAD8F /* MovieReservationApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D788302C1FB50CD3006DAD8F /* Build configuration list for PBXNativeTarget "MovieReservationApplicationUITests" */;
+			buildPhases = (
+				D78830191FB50CD2006DAD8F /* Sources */,
+				D788301A1FB50CD2006DAD8F /* Frameworks */,
+				D788301B1FB50CD2006DAD8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D788301F1FB50CD3006DAD8F /* PBXTargetDependency */,
+			);
+			name = MovieReservationApplicationUITests;
+			productName = MovieReservationApplicationUITests;
+			productReference = D788301D1FB50CD2006DAD8F /* MovieReservationApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7882FF61FB50CD2006DAD8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Giovanni Lirios Aguilar";
+				TargetAttributes = {
+					D7882FFD1FB50CD2006DAD8F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D78830111FB50CD2006DAD8F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D7882FFD1FB50CD2006DAD8F;
+					};
+					D788301C1FB50CD2006DAD8F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D7882FFD1FB50CD2006DAD8F;
+					};
+				};
+			};
+			buildConfigurationList = D7882FF91FB50CD2006DAD8F /* Build configuration list for PBXProject "MovieReservationApplication" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7882FF51FB50CD2006DAD8F;
+			productRefGroup = D7882FFF1FB50CD2006DAD8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7882FFD1FB50CD2006DAD8F /* MovieReservationApplication */,
+				D78830111FB50CD2006DAD8F /* MovieReservationApplicationTests */,
+				D788301C1FB50CD2006DAD8F /* MovieReservationApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7882FFC1FB50CD2006DAD8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D788300C1FB50CD2006DAD8F /* LaunchScreen.storyboard in Resources */,
+				D78830091FB50CD2006DAD8F /* Assets.xcassets in Resources */,
+				D78830071FB50CD2006DAD8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78830101FB50CD2006DAD8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788301B1FB50CD2006DAD8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7882FFA1FB50CD2006DAD8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78830041FB50CD2006DAD8F /* ViewController.swift in Sources */,
+				D78830021FB50CD2006DAD8F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788300E1FB50CD2006DAD8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78830171FB50CD2006DAD8F /* MovieReservationApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78830191FB50CD2006DAD8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78830221FB50CD3006DAD8F /* MovieReservationApplicationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D78830141FB50CD2006DAD8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7882FFD1FB50CD2006DAD8F /* MovieReservationApplication */;
+			targetProxy = D78830131FB50CD2006DAD8F /* PBXContainerItemProxy */;
+		};
+		D788301F1FB50CD3006DAD8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7882FFD1FB50CD2006DAD8F /* MovieReservationApplication */;
+			targetProxy = D788301E1FB50CD3006DAD8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D78830051FB50CD2006DAD8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D78830061FB50CD2006DAD8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D788300A1FB50CD2006DAD8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D788300B1FB50CD2006DAD8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D78830241FB50CD3006DAD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D78830251FB50CD3006DAD8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D78830271FB50CD3006DAD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EPXK8453YG;
+				INFOPLIST_FILE = MovieReservationApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CPE436.MovieReservationApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D78830281FB50CD3006DAD8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EPXK8453YG;
+				INFOPLIST_FILE = MovieReservationApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CPE436.MovieReservationApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D788302A1FB50CD3006DAD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EPXK8453YG;
+				INFOPLIST_FILE = MovieReservationApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CPE436.MovieReservationApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieReservationApplication.app/MovieReservationApplication";
+			};
+			name = Debug;
+		};
+		D788302B1FB50CD3006DAD8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EPXK8453YG;
+				INFOPLIST_FILE = MovieReservationApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CPE436.MovieReservationApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieReservationApplication.app/MovieReservationApplication";
+			};
+			name = Release;
+		};
+		D788302D1FB50CD3006DAD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EPXK8453YG;
+				INFOPLIST_FILE = MovieReservationApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CPE436.MovieReservationApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovieReservationApplication;
+			};
+			name = Debug;
+		};
+		D788302E1FB50CD3006DAD8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EPXK8453YG;
+				INFOPLIST_FILE = MovieReservationApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CPE436.MovieReservationApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovieReservationApplication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7882FF91FB50CD2006DAD8F /* Build configuration list for PBXProject "MovieReservationApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78830241FB50CD3006DAD8F /* Debug */,
+				D78830251FB50CD3006DAD8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D78830261FB50CD3006DAD8F /* Build configuration list for PBXNativeTarget "MovieReservationApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78830271FB50CD3006DAD8F /* Debug */,
+				D78830281FB50CD3006DAD8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D78830291FB50CD3006DAD8F /* Build configuration list for PBXNativeTarget "MovieReservationApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D788302A1FB50CD3006DAD8F /* Debug */,
+				D788302B1FB50CD3006DAD8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D788302C1FB50CD3006DAD8F /* Build configuration list for PBXNativeTarget "MovieReservationApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D788302D1FB50CD3006DAD8F /* Debug */,
+				D788302E1FB50CD3006DAD8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7882FF61FB50CD2006DAD8F /* Project object */;
+}
