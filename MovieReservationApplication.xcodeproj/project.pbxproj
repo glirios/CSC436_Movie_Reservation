@@ -14,6 +14,7 @@
 		D788300C1FB50CD2006DAD8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D788300A1FB50CD2006DAD8F /* LaunchScreen.storyboard */; };
 		D78830171FB50CD2006DAD8F /* MovieReservationApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78830161FB50CD2006DAD8F /* MovieReservationApplicationTests.swift */; };
 		D78830221FB50CD3006DAD8F /* MovieReservationApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78830211FB50CD3006DAD8F /* MovieReservationApplicationUITests.swift */; };
+		D78830321FB571BF006DAD8F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D78830311FB571BF006DAD8F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D788301D1FB50CD2006DAD8F /* MovieReservationApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieReservationApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78830211FB50CD3006DAD8F /* MovieReservationApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReservationApplicationUITests.swift; sourceTree = "<group>"; };
 		D78830231FB50CD3006DAD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D78830311FB571BF006DAD8F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				D78830011FB50CD2006DAD8F /* AppDelegate.swift */,
 				D78830031FB50CD2006DAD8F /* ViewController.swift */,
+				D78830311FB571BF006DAD8F /* README.md */,
 				D78830051FB50CD2006DAD8F /* Main.storyboard */,
 				D78830081FB50CD2006DAD8F /* Assets.xcassets */,
 				D788300A1FB50CD2006DAD8F /* LaunchScreen.storyboard */,
@@ -234,6 +237,7 @@
 			files = (
 				D788300C1FB50CD2006DAD8F /* LaunchScreen.storyboard in Resources */,
 				D78830091FB50CD2006DAD8F /* Assets.xcassets in Resources */,
+				D78830321FB571BF006DAD8F /* README.md in Resources */,
 				D78830071FB50CD2006DAD8F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
