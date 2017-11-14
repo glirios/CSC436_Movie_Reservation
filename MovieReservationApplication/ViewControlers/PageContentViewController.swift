@@ -14,9 +14,16 @@ class PageContentViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var moviePosterView: UIImageView!
     
+    var pageIndex : Int = 0
+    var labelText : String!
+    var moviePosterText : String!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        titleLabel.text = labelText
+        moviePosterView.image = UIImage(named: moviePosterText)
+        
         // Do any additional setup after loading the view.
     }
 
