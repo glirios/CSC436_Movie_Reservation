@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D76B910D1FB7CA9500F940B4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B910C1FB7CA9500F940B4 /* Movie.swift */; };
+		D76B910F1FB7DABA00F940B4 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B910E1FB7DABA00F940B4 /* PageContentViewController.swift */; };
 		D78830021FB50CD2006DAD8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78830011FB50CD2006DAD8F /* AppDelegate.swift */; };
 		D78830041FB50CD2006DAD8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78830031FB50CD2006DAD8F /* ViewController.swift */; };
 		D78830071FB50CD2006DAD8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78830051FB50CD2006DAD8F /* Main.storyboard */; };
@@ -14,7 +16,6 @@
 		D788300C1FB50CD2006DAD8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D788300A1FB50CD2006DAD8F /* LaunchScreen.storyboard */; };
 		D78830171FB50CD2006DAD8F /* MovieReservationApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78830161FB50CD2006DAD8F /* MovieReservationApplicationTests.swift */; };
 		D78830221FB50CD3006DAD8F /* MovieReservationApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78830211FB50CD3006DAD8F /* MovieReservationApplicationUITests.swift */; };
-		D78830321FB571BF006DAD8F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D78830311FB571BF006DAD8F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D76B910C1FB7CA9500F940B4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D76B910E1FB7DABA00F940B4 /* PageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PageContentViewController.swift; path = MovieReservationApplication/ViewControlers/PageContentViewController.swift; sourceTree = SOURCE_ROOT; };
 		D7882FFE1FB50CD2006DAD8F /* MovieReservationApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieReservationApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78830011FB50CD2006DAD8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D78830031FB50CD2006DAD8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		D788301D1FB50CD2006DAD8F /* MovieReservationApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieReservationApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78830211FB50CD3006DAD8F /* MovieReservationApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReservationApplicationUITests.swift; sourceTree = "<group>"; };
 		D78830231FB50CD3006DAD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D78830311FB571BF006DAD8F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D76B91091FB7CA2400F940B4 /* ViewControlers */ = {
+			isa = PBXGroup;
+			children = (
+				D76B910E1FB7DABA00F940B4 /* PageContentViewController.swift */,
+				D78830031FB50CD2006DAD8F /* ViewController.swift */,
+			);
+			path = ViewControlers;
+			sourceTree = "<group>";
+		};
+		D76B910A1FB7CA4700F940B4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D788300A1FB50CD2006DAD8F /* LaunchScreen.storyboard */,
+				D78830051FB50CD2006DAD8F /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D76B910B1FB7CA7200F940B4 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				D76B910C1FB7CA9500F940B4 /* Movie.swift */,
+			);
+			path = "Data Structures";
+			sourceTree = "<group>";
+		};
 		D7882FF51FB50CD2006DAD8F = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +127,11 @@
 		D78830001FB50CD2006DAD8F /* MovieReservationApplication */ = {
 			isa = PBXGroup;
 			children = (
+				D76B910B1FB7CA7200F940B4 /* Data Structures */,
+				D76B910A1FB7CA4700F940B4 /* Storyboards */,
+				D76B91091FB7CA2400F940B4 /* ViewControlers */,
 				D78830011FB50CD2006DAD8F /* AppDelegate.swift */,
-				D78830031FB50CD2006DAD8F /* ViewController.swift */,
-				D78830311FB571BF006DAD8F /* README.md */,
-				D78830051FB50CD2006DAD8F /* Main.storyboard */,
 				D78830081FB50CD2006DAD8F /* Assets.xcassets */,
-				D788300A1FB50CD2006DAD8F /* LaunchScreen.storyboard */,
 				D788300D1FB50CD2006DAD8F /* Info.plist */,
 			);
 			path = MovieReservationApplication;
@@ -237,7 +264,6 @@
 			files = (
 				D788300C1FB50CD2006DAD8F /* LaunchScreen.storyboard in Resources */,
 				D78830091FB50CD2006DAD8F /* Assets.xcassets in Resources */,
-				D78830321FB571BF006DAD8F /* README.md in Resources */,
 				D78830071FB50CD2006DAD8F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D78830041FB50CD2006DAD8F /* ViewController.swift in Sources */,
+				D76B910F1FB7DABA00F940B4 /* PageContentViewController.swift in Sources */,
 				D78830021FB50CD2006DAD8F /* AppDelegate.swift in Sources */,
+				D76B910D1FB7CA9500F940B4 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

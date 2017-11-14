@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
 //        let session = URLSession(configuration: URLSessionConfiguration.default)
 //        let request = URLRequest(url: URL(string: moviesCall)!)
 //        let task: URLSessionDataTask = session.dataTask(with: request) { (receivedData, response, error) -> Void in
@@ -42,6 +43,8 @@ class ViewController: UIViewController {
 //            }
 //        }
 //        task2.resume()
+        
+        
         
     }
 

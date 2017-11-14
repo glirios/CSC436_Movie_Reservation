@@ -25,6 +25,46 @@
             </objects>
             <point key="canvasLocation" x="158" y="-106"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="vkw-JO-1HW">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="oTv-Mx-xj1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2IE-x3-tOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="303"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="dhF-Gl-7fW">
+            <objects>
+                <viewController storyboardIdentifier="PageContentController" id="LPW-ib-qB1" customClass="PageContentViewController" customModule="MovieReservationApplication" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EPU-qT-aGc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ti-i0-dqe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zk-2w-r3c">
+                                <rect key="frame" x="148" y="51" width="150" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ZDj-9B-e1e"/>
+                    </view>
+                    <connections>
+                        <outlet property="moviePosterView" destination="7ti-i0-dqe" id="cp1-ac-fBh"/>
+                        <outlet property="titleLabel" destination="6zk-2w-r3c" id="2WZ-jk-iQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5E-o2-4nT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905" y="303"/>
+        </scene>
         <!--movieResults-->
         <scene sceneID="7uE-QT-zJD">
             <objects>
