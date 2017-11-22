@@ -13,17 +13,59 @@
         <!--Home Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Home Page" id="BYZ-38-t0r" customClass="ViewController" customModule="MovieReservationApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home Page" id="BYZ-38-t0r" customClass="HomePage" customModule="MovieReservationApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="infinite" translatesAutoresizingMaskIntoConstraints="NO" id="I3h-wV-kGv">
+                                <rect key="frame" x="10" y="70" width="349" height="275"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BpH-fb-1Fq">
+                                <rect key="frame" x="10" y="10" width="280" height="56"/>
+                                <color key="barTintColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ead-NB-QK5">
+                                <rect key="frame" x="310" y="23" width="38" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="LoginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4B-Qo-OEw"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="wzM-3X-VCp">
+                                <rect key="frame" x="87" y="353" width="200" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I3h-wV-kGv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="1hg-02-agz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I3h-wV-kGv" secondAttribute="trailing" constant="16" id="3YN-rb-4An"/>
+                            <constraint firstItem="BpH-fb-1Fq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="5B9-B6-5RQ"/>
+                            <constraint firstItem="wzM-3X-VCp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="EJh-2H-sfy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="BpH-fb-1Fq" secondAttribute="top" constant="10" id="HU0-Xp-FUE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wzM-3X-VCp" secondAttribute="bottom" constant="277" id="IFd-ZW-Ice"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wzM-3X-VCp" secondAttribute="trailing" constant="88" id="Tu0-sb-Jdl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ead-NB-QK5" secondAttribute="trailing" constant="27" id="Ubl-lt-Bel"/>
+                            <constraint firstItem="wzM-3X-VCp" firstAttribute="top" secondItem="I3h-wV-kGv" secondAttribute="bottom" constant="8" id="YJW-o0-Scn"/>
+                            <constraint firstItem="I3h-wV-kGv" firstAttribute="top" secondItem="ead-NB-QK5" secondAttribute="bottom" constant="17" id="a11-i9-3vi"/>
+                            <constraint firstItem="ead-NB-QK5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="kZX-BF-G9o"/>
+                            <constraint firstItem="ead-NB-QK5" firstAttribute="leading" secondItem="BpH-fb-1Fq" secondAttribute="trailing" constant="20" id="qDc-Pq-lyy"/>
+                            <constraint firstItem="I3h-wV-kGv" firstAttribute="top" secondItem="BpH-fb-1Fq" secondAttribute="bottom" constant="4" id="ueS-34-WIH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="featuredMovie" destination="I3h-wV-kGv" id="8OP-bh-7sK"/>
+                        <outlet property="pageControl" destination="wzM-3X-VCp" id="OgQ-7x-U6L"/>
+                        <outlet property="searchBar" destination="BpH-fb-1Fq" id="7Mz-MN-w9J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="-106"/>
+            <point key="canvasLocation" x="133.59999999999999" y="-110.19490254872565"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="vkw-JO-1HW">
