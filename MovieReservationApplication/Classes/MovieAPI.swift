@@ -19,6 +19,10 @@ class MovieAPI {
         var coordinatesSet = false
         var date : String
         let base = "http://data.tmsapi.com/v1.1/movies/showings?"
+        
+        if startDate != "" {
+            base = base + "startDate="
+        }
         if Double(lat) != 800 && Double(lng) != 800 {
             coordinatesSet = true
         }
@@ -26,13 +30,12 @@ class MovieAPI {
         days = numDays
         
         if startDate != "" {
-            self.startDate = startDate
+            date = startDate
         } else {
-            self.startDate = getDate()
+            date = getDate()
         }
-        self.radius = radius
-
         
+        let session = URLSession(configuration: URLSessionConfiguration.default)
     }
     
     // Pulls the correct date for the date
