@@ -21,7 +21,8 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
-
+Pods/*.xcodeproj/xcuserdata/
+Pods/*.xcodeproj/project.xcworkspace/xcuserdata/
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
