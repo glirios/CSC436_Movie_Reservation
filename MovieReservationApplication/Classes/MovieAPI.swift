@@ -33,10 +33,6 @@ class MovieAPI {
         return "\(year)-\(month)-\(day)"
     }
     
-    
-    func 
-    
-    
     //http://data.tmsapi.com/v1.1/movies/showings?startDate=2017-12-2&numDays=2&zip=93405&lat=40.741895&lng=-73.989308&radius=25&imageSize=Sm&api_key=fa4yd8erkydjmhdevq6zb8rz
     func getMoviesPlayingLocally(startDate:String, numDays:String = "1", zip:String, lat: String, lng: String, radius: String = "5", completionHandler: @escaping ([Movies]) -> Void) {
         
