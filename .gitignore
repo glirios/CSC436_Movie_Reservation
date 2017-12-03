@@ -54,7 +54,7 @@ playground.xcworkspace
 # Carthage/Checkouts
 
 Carthage/Build
-
+Pods/Pods.xcodeproj/xcuserdata/glirios.xcuserdatad/xcschemes/xcschememanagement.plist
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
