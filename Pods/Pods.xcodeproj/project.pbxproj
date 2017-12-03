@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -185,17 +185,38 @@
 		54890ED5686660B0B7F6404D997BBFDD /* Pods-MovieReservationApplicationTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MovieReservationApplicationTests.modulemap"; sourceTree = "<group>"; };
 		578887C945648A9AB4E52CC7977FD36C /* SafariWebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariWebAuth.swift; path = Auth0/SafariWebAuth.swift; sourceTree = "<group>"; };
 		5895198A7143043559C8667363C70894 /* SafariSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariSession.swift; path = Auth0/SafariSession.swift; sourceTree = "<group>"; };
+		307155BC2ED26E76D6B90AF859430CE1 /* Pods_MovieReservationApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieReservationApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3244BA7465BA02475239641391FBBFCE /* Pods-MovieReservationApplicationTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieReservationApplicationTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		36E84B16162EF61B886584E40B33840B /* Pods-MovieReservationApplication.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MovieReservationApplication.modulemap"; sourceTree = "<group>"; };
+		442D1855141DD7DD3AD9930197B8C7F4 /* Pods-MovieReservationApplication-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieReservationApplication-resources.sh"; sourceTree = "<group>"; };
+		4B7236B9B35B25C377B145591377CCD7 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
+		4C9CF7FC5E92D31F27BC038941EA6A5A /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
+		4DED9E673D4BFF32456187BB58E006AC /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		4E042612013FB6CD86A7F8229AA61BE1 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		505C5F864762B7FE38AA845332172DE9 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		52ED4DCE197912037C60BF2DD6B9E4E6 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		54890ED5686660B0B7F6404D997BBFDD /* Pods-MovieReservationApplicationTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MovieReservationApplicationTests.modulemap"; sourceTree = "<group>"; };
+		56CAA223ED48671D00B612679A4CFF93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5781526AD437A00C4907E175A1F9B824 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		5857319B3AF21174742939162D58FA56 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		5ACADB9EF2837349C2A5F44E67B33B53 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+
 		5BC6B1655F880E0E2416003215B142E7 /* Pods-MovieReservationApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieReservationApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DA498F16374BC0FACFC96335DC30BCB /* Pods-MovieReservationApplicationTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieReservationApplicationTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		63D50750F82422E7843AACD92E2FEAF4 /* Users.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Auth0/Users.swift; sourceTree = "<group>"; };
 		66D2A51F212EAB42A4BCF4198CC803EF /* Pods-MovieReservationApplication-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieReservationApplication-acknowledgements.plist"; sourceTree = "<group>"; };
 		683F63276CC387BBF52049B26642FEBD /* Pods-MovieReservationApplicationTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieReservationApplicationTests-resources.sh"; sourceTree = "<group>"; };
+
 		6A9BD37FCC529B84EF196C3CAB20A748 /* AuthenticationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationError.swift; path = Auth0/AuthenticationError.swift; sourceTree = "<group>"; };
 		6AB7119E7215CE2D072561571D9AA282 /* SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimpleKeychain.h; path = SimpleKeychain/SimpleKeychain.h; sourceTree = "<group>"; };
 		6EEEEB949246A1D890FBDF9ED3A15013 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
 		7041F5C2A2CBE21911878A406F1192A2 /* NSError+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSError+Helper.swift"; path = "Auth0/NSError+Helper.swift"; sourceTree = "<group>"; };
 		72668925735922F7E9E00BFB5F8E19DD /* Requestable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Requestable.swift; path = Auth0/Requestable.swift; sourceTree = "<group>"; };
 		72D245B16E077D2A5861FCD08FB24096 /* SimpleKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SimpleKeychain.modulemap; sourceTree = "<group>"; };
+
+		6A05DA73D27703E40AF61EAC1D940955 /* Pods_MovieReservationApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieReservationApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB52DDBB9DFBCB4200FB32809A19889 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
 		72F5FA7AFA42D739682DCBC899551374 /* Pods-MovieReservationApplicationUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieReservationApplicationUITests-frameworks.sh"; sourceTree = "<group>"; };
 		758DCE6EE0880AA7252FA0FE27207F9C /* SimpleKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleKeychain.xcconfig; sourceTree = "<group>"; };
 		775AFE5F5462EF100AB363CDCA8E571C /* ControllerModalPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControllerModalPresenter.swift; path = Auth0/ControllerModalPresenter.swift; sourceTree = "<group>"; };
@@ -205,11 +226,16 @@
 		7CC711E4C8C3376DAEF5AA0329CB4EFB /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
 		7D3BABDD6CEA213149F7A5D550C1B09D /* TransactionStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransactionStore.swift; path = Auth0/TransactionStore.swift; sourceTree = "<group>"; };
 		7E5898A6BFD625E49454CACEC3FB672E /* Pods-MovieReservationApplicationTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieReservationApplicationTests-umbrella.h"; sourceTree = "<group>"; };
+
 		80C0E63068D67B950D3A19D9F5E08ACF /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81359C6BC07B0133BBCC48607DE29892 /* SafariAuthenticationSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariAuthenticationSession.swift; path = Auth0/SafariAuthenticationSession.swift; sourceTree = "<group>"; };
+
+		82CEB5BE66D8DB20FC71FA575276F9A5 /* Pods_MovieReservationApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieReservationApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
 		83C7D5412DEFE8C53289732F840DAED8 /* Pods-MovieReservationApplicationUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieReservationApplicationUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		853C72DE9B0EE17D63AF9B0FB07706E6 /* WebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebAuth.swift; path = Auth0/WebAuth.swift; sourceTree = "<group>"; };
 		895BC36B81C96BB4EAE0C9C7BDF1C319 /* Pods-MovieReservationApplication-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieReservationApplication-acknowledgements.markdown"; sourceTree = "<group>"; };
+
 		8A862DD21A02587DB8365AD8284A21FE /* Pods_MovieReservationApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MovieReservationApplication.framework; path = "Pods-MovieReservationApplication.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF567EBBF51E9510EED7FD4943B5305 /* SimpleKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleKeychain.framework; path = SimpleKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		928E35FAF6020BFFAC5789225EAF1953 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,12 +263,23 @@
 		B2605B7FDB2F00BAD7205A3AF9629924 /* ResponseType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseType.swift; path = Auth0/ResponseType.swift; sourceTree = "<group>"; };
 		B4BAACB39D2851CE1E6740917F5BCE9A /* A0SimpleKeychain+KeyPair.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "A0SimpleKeychain+KeyPair.m"; path = "SimpleKeychain/A0SimpleKeychain+KeyPair.m"; sourceTree = "<group>"; };
 		B54596C43E4CCA6AEFE0EFAC93DBF3CE /* Handlers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Handlers.swift; path = Auth0/Handlers.swift; sourceTree = "<group>"; };
+
+		8DC6188353307D7539A2D86B7160AC82 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0A0B2F788848A43580C8F3FBBA24D7 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96DE222DE413BDFDBA6170A07CC97B8D /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		A2BE2907D477602ADADD123418AA50E6 /* Pods-MovieReservationApplication-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieReservationApplication-frameworks.sh"; sourceTree = "<group>"; };
+		A9B3EF11B1D829B671E6EF9C907FE7E2 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		AA70056BAD8EA3D683367B686F1E6B09 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
+		AF577CB3FB3CA827E64E6F3625F4804A /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_encode.c; sourceTree = "<group>"; };
+
 		B62D086F052C8D4672C7518DB1695A82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6C058AB0CA1E7DD068F44BA81291381 /* A0ChallengeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0ChallengeGenerator.h; path = Auth0/A0ChallengeGenerator.h; sourceTree = "<group>"; };
 		B8AE40D20476D787ACFCA9A202B3D9D1 /* Auth0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Auth0.xcconfig; sourceTree = "<group>"; };
 		B8F7BDD50EDFFFCB2CAABAA28FFE0EB7 /* Identity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identity.swift; path = Auth0/Identity.swift; sourceTree = "<group>"; };
 		BBC6E01AEF29C50E36D5C61CEF7155FD /* NSURL+Auth0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+Auth0.swift"; path = "Auth0/NSURL+Auth0.swift"; sourceTree = "<group>"; };
 		BCF87092641D2BBD82247C5F6FB999C7 /* Pods-MovieReservationApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieReservationApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+
 		BD22F422EE4AF236E034A91282B98119 /* Auth0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Auth0.h; path = Auth0/Auth0.h; sourceTree = "<group>"; };
 		BD248C0F99209CFE005C85D40C9CEA54 /* AuthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthProvider.swift; path = Auth0/AuthProvider.swift; sourceTree = "<group>"; };
 		C05905F4A802DA682AA5F28EA5CAE70A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -251,6 +288,10 @@
 		C66FC2863C3ECF43E56142A19C270F49 /* Auth0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Auth0.modulemap; sourceTree = "<group>"; };
 		C86E6F7B16B0B473731CC6A33DF8135A /* OAuth2Grant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Grant.swift; path = Auth0/OAuth2Grant.swift; sourceTree = "<group>"; };
 		C9ED1EE1105CEBEE78883568D754F882 /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = nanopb.modulemap; sourceTree = "<group>"; };
+
+		BF1A6257C603208E8F69C1551B338D30 /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = nanopb.modulemap; sourceTree = "<group>"; };
+		CB1DA5FCB6FC9EDA0D22883C685735B5 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_common.c; sourceTree = "<group>"; };
+
 		CB60D3492F5BE00E1DFBEF7A7998FE22 /* Pods-MovieReservationApplication-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieReservationApplication-umbrella.h"; sourceTree = "<group>"; };
 		CF38E96C01ACF57955276112E67C5455 /* Pods-MovieReservationApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieReservationApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		D21D4F7E410764FC2D4B58B4DA44FB87 /* SimpleKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKeychain-prefix.pch"; sourceTree = "<group>"; };
@@ -271,12 +312,17 @@
 		ED50FE6ADF1DA898C68D140F729DD59E /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
 		F3BC3FA6FF5CBD5F43AEAA5B1D6827EE /* _ObjectiveAuthenticationAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveAuthenticationAPI.swift; path = Auth0/_ObjectiveAuthenticationAPI.swift; sourceTree = "<group>"; };
 		F540DAF88268A2664DD399CBBC12AA89 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
 		F6146E576C19D2F4C785F3074830E68C /* A0SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SimpleKeychain.h; path = SimpleKeychain/A0SimpleKeychain.h; sourceTree = "<group>"; };
 		F6F59B6B805EC63573E8AA68D2E65AA8 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
 		F8CA1EB7A373034519176C46C9F563B7 /* Loggable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loggable.swift; path = Auth0/Loggable.swift; sourceTree = "<group>"; };
 		FA1779727239F5E33EAB278CEB4C70A0 /* CredentialsManagerError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsManagerError.swift; path = Auth0/CredentialsManagerError.swift; sourceTree = "<group>"; };
 		FCE40806C872DF879F221A78C4DB1C13 /* SilentSafariViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SilentSafariViewController.swift; path = Auth0/SilentSafariViewController.swift; sourceTree = "<group>"; };
 		FDD21E17E8E5B2C8C933CC8A96F3B33C /* Pods-MovieReservationApplicationUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MovieReservationApplicationUITests.modulemap"; sourceTree = "<group>"; };
+
+		F6156B8D6D3DD90AEE4394E6A26A89FE /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		FDD21E17E8E5B2C8C933CC8A96F3B33C /* Pods-MovieReservationApplicationUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MovieReservationApplicationUITests.modulemap"; sourceTree = "<group>"; };
+
 		FE5505FEF8AC0064DCE9AF85F0A1E1FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -349,8 +395,12 @@
 			children = (
 				D3D145E7FE9718859DBE29A2D32A5DB3 /* Frameworks */,
 			);
+
 			name = FirebaseInstanceID;
 			path = FirebaseInstanceID;
+
+			path = nanopb;
+
 			sourceTree = "<group>";
 		};
 		03C335AB5C969D70B00BAFD98303696E /* Support Files */ = {
@@ -363,6 +413,7 @@
 				A83EDC9137E84018ADE0117BCDCB02E2 /* Auth0-umbrella.h */,
 				2BA6FB9FFD931D471B7DD752DD65A018 /* Info.plist */,
 			);
+
 			name = "Support Files";
 			path = "../Target Support Files/Auth0";
 			sourceTree = "<group>";
@@ -396,6 +447,9 @@
 			);
 			name = GoogleToolboxForMac;
 			path = GoogleToolboxForMac;
+
+			path = FirebaseInstanceID;
+
 			sourceTree = "<group>";
 		};
 		53DBE6516A6CC2983EF86AE74213FC2F /* Pods-MovieReservationApplicationUITests */ = {
@@ -528,8 +582,12 @@
 				6AB7119E7215CE2D072561571D9AA282 /* SimpleKeychain.h */,
 				58C65EE9D5E2BAF521585930BFAD7671 /* Support Files */,
 			);
+
 			name = SimpleKeychain;
 			path = SimpleKeychain;
+
+			path = FirebaseAnalytics;
+
 			sourceTree = "<group>";
 		};
 		8DEE65C32F92FC3C309E5D62CAC83C3E /* Defines */ = {
@@ -619,7 +677,11 @@
 			isa = PBXGroup;
 			children = (
 			);
+
 			name = encode;
+
+			path = Firebase;
+
 			sourceTree = "<group>";
 		};
 		ADC35D30F3356B3E958BF4205890394F /* Products */ = {
@@ -648,7 +710,11 @@
 			children = (
 				2E58BC1E83E955218025390100C65263 /* FirebaseAnalytics.framework */,
 			);
+
 			name = Frameworks;
+
+			path = FirebaseCore;
+
 			sourceTree = "<group>";
 		};
 		D3D145E7FE9718859DBE29A2D32A5DB3 /* Frameworks */ = {
@@ -724,8 +790,12 @@
 				98E1FE81BA6FEB51750EF4D37A6F2BAA /* WebAuthError.swift */,
 				03C335AB5C969D70B00BAFD98303696E /* Support Files */,
 			);
+
 			name = Auth0;
 			path = Auth0;
+
+			path = GoogleToolboxForMac;
+
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -933,6 +1003,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					00103D6C821BE85971C563025527BA5D = {
+						LastSwiftMigration = 0910;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1323,6 +1398,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EEEEB949246A1D890FBDF9ED3A15013 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1575,6 +1651,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EEEEB949246A1D890FBDF9ED3A15013 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1594,6 +1671,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

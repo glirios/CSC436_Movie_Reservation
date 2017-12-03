@@ -7,13 +7,15 @@
 //
 // Fandango API KEY 6c4x5kgcddwutw9u726sutey  Secret: RFJqwntuHa
 import UIKit
-import EventKit
 
 class ViewController: UIViewController {
 
-    let moviesCall = "https://data.tmsapi.com/v1.1/movies/showings?startDate=2017-11-10&zip=93405&api_key=fa4yd8erkydjmhdevq6zb8rz"
-    let reviewsCall = "https://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey=6c4x5kgcddwutw9u726sutey"
-    var calendar : Calendar?
+    let moviesCall = "https://data.tmsapi.com/v1.1/movies/showings?startDate=2017-11-30&zip=93405&api_key=fa4yd8erkydjmhdevq6zb8rz"
+    var movieData : [Movies]?
+    var API = MovieAPI()
+    var date : String!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +23,6 @@ class ViewController: UIViewController {
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let request = URLRequest(url: URL(string: moviesCall)!)
         let task: URLSessionDataTask = session.dataTask(with: request) { (receivedData, response, error) -> Void in
-
 
             if error == nil, let data = receivedData {
 
@@ -49,44 +50,30 @@ class ViewController: UIViewController {
     }
 
     func jsonDrillDown(json : Any, indent: String) {
-        let ourIndent = indent + "\t"
-        
-        if json is Dictionary<String,Any> {
-            let dict = json as! Dictionary<String,Any>
-            for (key, value) in dict {
-                if value is Dictionary<String, Any> {
-                    print("\(ourIndent)\(key) is a dictionary ->")
-                    jsonDrillDown(json: value, indent: ourIndent)
-                } else if value is Array<Any> {
-                    let array = value as! Array<Any>
-                    let first = array.first
-                    if first is Dictionary<String,Any> {
-                        print("\(ourIndent)\(key) array -> type is a dictionary ->")
-                        jsonDrillDown(json: first!, indent: ourIndent)
-                    }
-                } else {
-                    //print("\(ourIndent)\(key) : \(type (of: value))")
-                    print("\(ourIndent)\(key) : " + convertToSwiftName(value: value))
+        let ourIndent = indent + "\t"  
+            if let data = receivedData {
+                do {
+                    
+                    let decoder = JSONDecoder()
+                    let array = try decoder.decode([Movies].self, from: data)
+//                    for item in array {
+//                        print(item.genres)
+//                        print(item.title)
+//                        print(item.directors)
+//                    }
+                    
+                } catch {
+                    print("Exception on Decode: \(error)")
                 }
             }
-        } else {
-            //print("\(ourIndent)type: \(type (of: json))")
-            print("\(ourIndent)type: " + convertToSwiftName(value: json))
         }
+        task.resume()
+        
     }
     
-    func convertToSwiftName(value : Any) -> String {
-        switch value {
-        case is NSString:
-            return "String"
-        case is NSNumber:
-            return "Number"
-        case is NSNull:
-            return "Null"
-        default:
-            return "****** something else! (type(of: value))"
-        }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-
 }
 
