@@ -9,7 +9,7 @@
 import Foundation
 
 class MovieAPI {
-    var movieData : [Movies]?
+    var movieDataAPI : [Movies]?
     private var Moviekey = "api_key=fa4yd8erkydjmhdevq6zb8rz"
     let ampersand = "&"
     let numDaysSring = "numDays="
@@ -20,8 +20,7 @@ class MovieAPI {
     let radiusString = "radius="
     let imageString = "imageSize=Sm"
     
-    //http://data.tmsapi.com/v1.1/movies/showings?startDate=2017-12-2&numDays=2&zip=93405&lat=40.741895&lng=-73.989308&radius=25&imageSize=Sm&api_key=fa4yd8erkydjmhdevq6zb8rz
-    //http://data.tmsapi.com/v1.1/movies/showings?startDate=2017-12-2&numDays=2&zip=93405&radius=10&imageSize=Sm&api_key=fa4yd8erkydjmhdevq6zb8rz
+
     // Pulls the correct date for the date
     func getDate() -> String {
         let date = Date()
@@ -34,8 +33,15 @@ class MovieAPI {
         return "\(year)-\(month)-\(day)"
     }
     
-    func getMoviesPlayingLocally(startDate:String, numDays:String = "1", zip:String, lat: String = "800", lng: String = "800", radius: String = "5") -> [Movies] {
-        var urlString : String = "http://data.tmsapi.com/v1.1/movies/showings?"
+    
+    func 
+    
+    
+    //http://data.tmsapi.com/v1.1/movies/showings?startDate=2017-12-2&numDays=2&zip=93405&lat=40.741895&lng=-73.989308&radius=25&imageSize=Sm&api_key=fa4yd8erkydjmhdevq6zb8rz
+    func getMoviesPlayingLocally(startDate:String, numDays:String = "1", zip:String, lat: String, lng: String, radius: String = "5", completionHandler: @escaping ([Movies]) -> Void) {
+        
+        var urlString : String = "https://data.tmsapi.com/v1.1/movies/showings?"
+
         if startDate != "" {
             urlString = urlString + startDateString + startDate
         } else {
@@ -44,7 +50,7 @@ class MovieAPI {
         
         urlString = urlString + ampersand + numDaysSring + numDays
         
-        if Double(lat) != 800 && Double(lng) != 800 {
+        if lat != "" && lng != "" {
             urlString = urlString + ampersand + latString + lat + ampersand + lngString + lng
         }
         else {
@@ -52,8 +58,7 @@ class MovieAPI {
         }
         
         urlString = urlString + ampersand + radiusString + radius + ampersand + imageString + ampersand + Moviekey
-
-        print(urlString)
+        
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let request = URLRequest(url: URL(string: urlString)!)
         let task : URLSessionDataTask = session.dataTask(with: request)
@@ -62,21 +67,21 @@ class MovieAPI {
             if let data = receivedData {
                 
                 do {
-                    print("here too")
-                    let decoder = JSONDecoder()
-                    self.movieData = try decoder.decode([Movies].self, from: data)
                     print("here")
-                    for data in self.movieData! {
-                        print(data.title
-                        )
+                    let decoder = JSONDecoder()
+                    print("before decoding")
+                    let movies = try decoder.decode([Movies].self, from: data)
+                    print("after decoding")
+                    for data in movies {
+                        print(data.title)
                     }
+                    completionHandler(movies)
                 } catch {
                     print("Exception on Decode: \(error)")
                 }
             }
         }
         task.resume()
-        return self.movieData!
     }
 
 }
