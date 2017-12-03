@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let moviesCall = "https://data.tmsapi.com/v1.1/movies/showings?startDate=2017-11-30&zip=93405&api_key=fa4yd8erkydjmhdevq6zb8rz"
+    let moviesCall = "http://data.tmsapi.com/v1.1/movies/MV005298400000/showings?startDate=2017-12-03&numDays=2&zip=93405&lat=35.299448&lng=-120.689006&radius=5&imageSize=Sm&api_key=fa4yd8erkydjmhdevq6zb8rz"
     var movieData : [Movies]?
     var API = MovieAPI()
     var date : String!
@@ -18,7 +18,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(API.getDate())
+        movieData = API.getMoviesPlayingLocally(startDate: "", numDays: "2", zip: "93405", radius: "10")
+        print(movieData?.count)
         
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let request = URLRequest(url: URL(string: moviesCall)!)
@@ -30,11 +32,10 @@ class ViewController: UIViewController {
                     
                     let decoder = JSONDecoder()
                     let array = try decoder.decode([Movies].self, from: data)
-//                    for item in array {
-//                        print(item.genres)
-//                        print(item.title)
-//                        print(item.directors)
-//                    }
+                    
+                    for movie in array {
+                        print(movie.showtimes)
+                    }
                     
                 } catch {
                     print("Exception on Decode: \(error)")

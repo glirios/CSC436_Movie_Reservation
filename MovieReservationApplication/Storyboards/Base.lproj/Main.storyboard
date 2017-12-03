@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Page-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Home Page" id="BYZ-38-t0r" customClass="ViewController" customModule="MovieReservationApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MovieReservationApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,6 +42,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="496.80000000000001" y="-106.59670164917542"/>
+        </scene>
+        <!--Home Page-->
+        <scene sceneID="r03-yb-EEW">
+            <objects>
+                <viewController title="Home Page" id="OO4-MM-WD7" customClass="HomePage" customModule="MovieReservationApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a9M-MZ-c8N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDx-tc-UD8">
+                                <rect key="frame" x="313" y="30" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="LoginButtonAction:" destination="OO4-MM-WD7" eventType="touchUpInside" id="7Zf-o4-keN"/>
+                                </connections>
+                            </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="po2-wv-BJN">
+                                <rect key="frame" x="0.0" y="69" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZd-qd-3eq">
+                                <rect key="frame" x="16" y="136" width="343" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="zUk-un-nWP">
+                                <rect key="frame" x="168" y="282" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="HOK-YP-QhP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BUF-m4-emb"/>
+                    <connections>
+                        <outlet property="featuredMovie" destination="mZd-qd-3eq" id="ae6-nC-Hhv"/>
+                        <outlet property="pageControl" destination="zUk-un-nWP" id="AJv-Bk-mas"/>
+                        <outlet property="searchBar" destination="po2-wv-BJN" id="ay6-eE-ti8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjy-6C-5Xd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455.19999999999999" y="670.61469265367316"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="vkw-JO-1HW">
@@ -149,12 +193,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GO0-Qe-Qo9"/>
+                        <segue destination="OO4-MM-WD7" kind="relationship" relationship="rootViewController" id="Weh-aE-pOH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Yi-r3-0W2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-414" y="-107"/>
+            <point key="canvasLocation" x="-1138" y="-69"/>
         </scene>
     </scenes>
 </document>

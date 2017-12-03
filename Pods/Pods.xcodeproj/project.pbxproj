@@ -3,46 +3,133 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05B1F02560378D28FEBD4E8F6D293216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3E28FC93E46C4778C303626C7CA9AB /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AFAA5C3128F2005ADECFD36E2085DC /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = CB1DA5FCB6FC9EDA0D22883C685735B5 /* pb_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc -fno-objc-arc"; }; };
+		010BF8BF1FDB11AFD712D0E3F61EC39D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D21B03D4078FEB139AD22BC464B6A8 /* Logger.swift */; };
+		05B1F02560378D28FEBD4E8F6D293216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E74B85A221F03973FDA707EB8FDAD8 /* Foundation.framework */; };
+		0A5E42A03840D954B028FF7777BA8669 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CD8B40383597881C5C4D82B2FCC27B /* Credentials.swift */; };
+		0B22E5A1E0EE68DE37563AC98FAA2231 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72668925735922F7E9E00BFB5F8E19DD /* Requestable.swift */; };
+		0E2D55D7C2F4A6C360C744DB68C4D296 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E74B85A221F03973FDA707EB8FDAD8 /* Foundation.framework */; };
+		10C9F9CD7364BAC887E664A18EE2AFEA /* Auth0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCB03ACA0E4E256F9F315EA53816A6 /* Auth0-dummy.m */; };
+		19BF8A21759F0A79013D8B33064375DA /* OAuth2Grant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E6F7B16B0B473731CC6A33DF8135A /* OAuth2Grant.swift */; };
+		248D3BE3E9416ACBA0752F6F9C204B45 /* A0SimpleKeychain+KeyPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3E337E41BAF7E47427C54A5A718712 /* A0SimpleKeychain+KeyPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29840DFFC29EB8B6B69A36A6B0592985 /* CredentialsManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1779727239F5E33EAB278CEB4C70A0 /* CredentialsManagerError.swift */; };
+		29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 26741C59F12FE58BEFC036584F5C1B3E /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C3BA869E7073EBE4C6B07BF1B41DE58 /* SimpleKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2202146D759D0FFE4A121E58D31DEA8 /* SimpleKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C4C13D535CE227D3BED09DA65706976 /* AuthSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2BCC46DE5810F852617BEA79B5DE9 /* AuthSession.swift */; };
+		2FEE5CFE62A6819A36CF4402396555D9 /* A0SimpleKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A42C1C867C51B226926BE6E962D66C /* A0SimpleKeychain.m */; };
+		34018CB72B29BDDA357587EDE799CBFA /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED50FE6ADF1DA898C68D140F729DD59E /* SafariServices.framework */; };
+		34335C43DA36452B56F2B1DC2F0D1354 /* JSONObjectPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EB0D5AC809E7081B3EC7659EA2B72 /* JSONObjectPayload.swift */; };
+		34E6EB53EDF0D3B613103A7EA49E8069 /* ManagementError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB10C9176C52D688522A80D2CD81421 /* ManagementError.swift */; };
+		353BE55CE7DDE641C6B284F319E117F4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D15138E722BEF48ED0D0CF26A9C604 /* Response.swift */; };
+		374307303589D991F2C8C7D9A6F8CBB6 /* Pods-MovieReservationApplication-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB60D3492F5BE00E1DFBEF7A7998FE22 /* Pods-MovieReservationApplication-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 243C0D5A768D3F7F7368C91F3A1DCC35 /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = E9DDEFCEC6ADF2199685C46C068DAFB1 /* pb_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc -fno-objc-arc"; }; };
 		3DEB20C8AD049A66AD698CA5463619E5 /* Pods-MovieReservationApplicationTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E5898A6BFD625E49454CACEC3FB672E /* Pods-MovieReservationApplicationTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CF7FC5E92D31F27BC038941EA6A5A /* nanopb-dummy.m */; };
-		481E4F6C6C75C74F309638F532CF107C /* Pods-MovieReservationApplication-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB60D3492F5BE00E1DFBEF7A7998FE22 /* Pods-MovieReservationApplication-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E3C2788DB1F22D9128231B1B06A418D /* NSData+URLSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365CC6263F8C5348A81EA3A8A59DA221 /* NSData+URLSafe.swift */; };
+		40DA0C98CFD9E42340BAF24BB554E2AD /* Pods-MovieReservationApplication-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E283C28DF6D9616A400B319DA539649E /* Pods-MovieReservationApplication-dummy.m */; };
+		468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA36DD7A19E3039759FB7364ADE2F2 /* nanopb-dummy.m */; };
+		49B9CAB2EDC4BF4F17AD876B0E5A7D66 /* NSURL+Auth0.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC6E01AEF29C50E36D5C61CEF7155FD /* NSURL+Auth0.swift */; };
+		4B18B76C7ED670447AD1ED3E25CBF2E9 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2605B7FDB2F00BAD7205A3AF9629924 /* ResponseType.swift */; };
+		4C71A0639C2B616E87D9D01A1B6DCB6D /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F7BDD50EDFFFCB2CAABAA28FFE0EB7 /* Identity.swift */; };
+		4C92315228EBA8159DA21128E8C7C007 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BB2095A3D225526E88017D007D7F5 /* Profile.swift */; };
 		4F0D3A978B92D9061B14C041EC03148B /* Pods-MovieReservationApplicationUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 084393C6FF5C43F8DA6376CC67B20032 /* Pods-MovieReservationApplicationUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E042612013FB6CD86A7F8229AA61BE1 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = AA70056BAD8EA3D683367B686F1E6B09 /* pb_decode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
-		55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = AF577CB3FB3CA827E64E6F3625F4804A /* pb_encode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		512D6B0A6E4718082639FC067B3D77B5 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9BD37FCC529B84EF196C3CAB20A748 /* AuthenticationError.swift */; };
+		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DAD9EAA7C40FCEB4414AAEDF5E1809 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = E6B566640D9580C772B4C10E2A9B9258 /* pb_decode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		54F7E0623F6269C8B928FEC1861E6F47 /* CredentialsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250F6C72B53A704963BD71F4766E3374 /* CredentialsManager.swift */; };
+		55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 7CC711E4C8C3376DAEF5AA0329CB4EFB /* pb_encode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		5D29D13FA9C00917707107EC141FCE09 /* A0SimpleKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = F6146E576C19D2F4C785F3074830E68C /* A0SimpleKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D87AFA497DD3E39400F2E80E57D0E72 /* NSError+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041F5C2A2CBE21911878A406F1192A2 /* NSError+Helper.swift */; };
+		5E6F9910E5BA38EC4BE972F78A57F6A0 /* SilentSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE40806C872DF879F221A78C4DB1C13 /* SilentSafariViewController.swift */; };
+		63241313517155AD974BA73C40275931 /* _ObjectiveWebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287664D85994A5FEDA4844C19FBB3475 /* _ObjectiveWebAuth.swift */; };
+		64A44C93687E8B9C0EF5AA9670004C6A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC563FD9BD514CDBC7EF23E3B4D2351 /* UserInfo.swift */; };
+		6594430F361D43CF16CD0BDF31C89285 /* WebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853C72DE9B0EE17D63AF9B0FB07706E6 /* WebAuth.swift */; };
+		68B8D7E4F90ADFC40FA36307B7B78271 /* Auth0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A83EDC9137E84018ADE0117BCDCB02E2 /* Auth0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69DD7BCDBFE772B9B6C261088D760BA0 /* TouchAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7C7EB88AE05778D533525BE49712C4 /* TouchAuthentication.swift */; };
+		6CC31D290B668852B8C6334553B37FA8 /* A0ChallengeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCA0F9798A6FDC2E495B306CEBF3D52 /* A0ChallengeGenerator.m */; };
 		6DFE04B14B5362D0411BA9B8C038C3EB /* Pods-MovieReservationApplicationUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 225AF9170AF9839227AE0DAEF40C2D80 /* Pods-MovieReservationApplicationUITests-dummy.m */; };
-		806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 841E491E4F984559D8FACA8D9B180DBA /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B9DDF1EF2BBAE154BC6081D24CB6369 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F9A74491C622EC773E7330856E85BE1 /* SafariWebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578887C945648A9AB4E52CC7977FD36C /* SafariWebAuth.swift */; };
+		72A62217E56B59BAAC36BA94B6FDC52B /* TransactionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3BABDD6CEA213149F7A5D550C1B09D /* TransactionStore.swift */; };
+		730013A9D8546E42A5EDB1405C95DEF1 /* Auth0Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98CA47084E7FA5C83FDAAEEC02F053 /* Auth0Error.swift */; };
+		75FCEDCABB87C3523BCE2D7A0E56A241 /* Auth0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147975AED772944778F2D7AA489E0C84 /* Auth0.swift */; };
+		77C8D2DC44272F051F6C3D15342259C0 /* SafariAuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81359C6BC07B0133BBCC48607DE29892 /* SafariAuthenticationSession.swift */; };
+		7903567F1EBCDE6E1F5CEC2563894678 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CA1EB7A373034519176C46C9F563B7 /* Loggable.swift */; };
+		7DAA19351A031238477FD00E37B2B7C3 /* A0ChallengeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C058AB0CA1E7DD068F44BA81291381 /* A0ChallengeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E601CA5B337F17111F4451E89A11AFA /* Auth0.h in Headers */ = {isa = PBXBuildFile; fileRef = BD22F422EE4AF236E034A91282B98119 /* Auth0.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F4C489515F3D14CC04C9E9B9B6E87BD /* ControllerModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AFE5F5462EF100AB363CDCA8E571C /* ControllerModalPresenter.swift */; };
+		806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE01762852E507DEC24B06232EFB3C7 /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2DAAE7E19C66D2DE254E55632A8CFC8 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A4A18005F75B2439B65471D4DF7CF28 /* Pods-MovieReservationApplicationTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA8752CD941E022D90F0F5C983B94B /* Pods-MovieReservationApplicationTests-dummy.m */; };
-		93D51748565CFEB9490FBA7DA993C5C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9B536989DBF8EF6302318A54C2203D27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9B73956C3258279B770F65AB0A69AAAA /* Pods-MovieReservationApplication-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E283C28DF6D9616A400B319DA539649E /* Pods-MovieReservationApplication-dummy.m */; };
-		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = EA772F7A06348F33C61B7286F52EEF50 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE7B8D368A91EAE3E81A4C8830A83932 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9E8F12766FD7202402AD690FB605B6 /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = F6156B8D6D3DD90AEE4394E6A26A89FE /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F9D92BA503505CB48EF4ECF0DDF57686 /* nanopb-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF6F39ECB24CE5CFAA775B1CC1E891D9 /* nanopb-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 505C5F864762B7FE38AA845332172DE9 /* GoogleToolboxForMac-dummy.m */; };
-		FF2BD40733863DC95DBCE24968664F12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		92EC3D97B9A48BC4C606C7A1375D141F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA68C19FA63C0978500F5631E190A4B /* Result.swift */; };
+		93D51748565CFEB9490FBA7DA993C5C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E74B85A221F03973FDA707EB8FDAD8 /* Foundation.framework */; };
+		9576482AA06DC77565EE878D900C4E4D /* Auth0Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B058C743C0323E1F7E0BFC7539E252 /* Auth0Authentication.swift */; };
+		996A12F7A014EBA15361D605D5C0AC65 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E39B59A81C8CBF43A65869513B80D09 /* Request.swift */; };
+		9B3C4BEA00C6291C4B2170AA59F7491B /* _ObjectiveAuthenticationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BC3FA6FF5CBD5F43AEAA5B1D6827EE /* _ObjectiveAuthenticationAPI.swift */; };
+		A26F4D1353F41B40EEF4F4049ACD4EBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5277BAED32B8C687D95B016DEBC0ACEE /* UIKit.framework */; };
+		A525E7BBC1E493314D9239ACCDD71312 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7E95D026B29FA57A08D1DF1FDD59B0 /* Date.swift */; };
+		A7F7767FD429D71C26BC27E5608CBBA8 /* WebAuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E1FE81BA6FEB51750EF4D37A6F2BAA /* WebAuthError.swift */; };
+		AA2F022306A43F87362DA9A916FCA4BD /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D50750F82422E7843AACD92E2FEAF4 /* Users.swift */; };
+		AE76680B385511796AB592354F847DA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E74B85A221F03973FDA707EB8FDAD8 /* Foundation.framework */; };
+		B2ADB4E3C5B915239EE6E2EB2110D50F /* SimpleKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA68C3729A24CCCB96CB2AB637FB550F /* SimpleKeychain.framework */; };
+		B345C03BEAF4F39214B7BC255363811B /* Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A1588A7EA1A408C397F1F37D6501CB /* Management.swift */; };
+		BC9C565C6416A069CCEB26DBA7C11CCB /* _ObjectiveManagementAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA82C3B0C292EC15DC70BF9248A393 /* _ObjectiveManagementAPI.swift */; };
+		BFF1BBF638B3A9DFA9280C9BE84ED4CF /* Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54596C43E4CCA6AEFE0EFAC93DBF3CE /* Handlers.swift */; };
+		C814A3F5EA0E1D36B04DFE69F4CF5BDF /* SafariSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5895198A7143043559C8667363C70894 /* SafariSession.swift */; };
+		C84FF500D71AFFB92DD263F030FA2D84 /* UserPatchAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9614B9AC00BD718B2E8AB707176AE404 /* UserPatchAttributes.swift */; };
+		C9F4E38A28EB45B9FA638FE520D36FA6 /* SimpleKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AB7119E7215CE2D072561571D9AA282 /* SimpleKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB02819D85EAF3D5C683C3DA79075199 /* AuthTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56739873DE9AF15023CC914B10564 /* AuthTransaction.swift */; };
+		CD536BA7069F5916C9D414A13C35C841 /* SafariAuthenticationCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF9E82F6F81BB834F7940B65A04C58 /* SafariAuthenticationCallback.swift */; };
+		CF8259D3F591674DD8D797C4AE93A27E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E74B85A221F03973FDA707EB8FDAD8 /* Foundation.framework */; };
+		D0FC9BA32307D96CD11BFCDAEC11F7AC /* SimpleKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BB9A734D1122E8EA3F6F44D9A6C204 /* SimpleKeychain-dummy.m */; };
+		D276D86D4E796EE7FEE86C587F297570 /* NSURLComponents+OAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FFB05430DDB7BECDEA5C5F598F7657 /* NSURLComponents+OAuth2.swift */; };
+		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E032098B481035285B9FD4163BC5978 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE7B8D368A91EAE3E81A4C8830A83932 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E74B85A221F03973FDA707EB8FDAD8 /* Foundation.framework */; };
+		E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = A83E51A494AE641E12B49B927EF5D3B8 /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E768EE1126B85475CB903C79625DF2C3 /* NativeAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C310373369B622129A4EDE3438BD8472 /* NativeAuth.swift */; };
+		E8235575ED5D223EB7FE958A7ED4838B /* Telemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C4433B1D033145D346A16B4C55489 /* Telemetry.swift */; };
+		ED4FB8456B6D92DC8E9E564B188431A1 /* A0SimpleKeychain+KeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BAACB39D2851CE1E6740917F5BCE9A /* A0SimpleKeychain+KeyPair.m */; };
+		F548370F6139EFBEE22B0200748E3A4C /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD248C0F99209CFE005C85D40C9CEA54 /* AuthProvider.swift */; };
+		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EDFAAAB547A854A8F6293AB5F8E4E1 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F9D92BA503505CB48EF4ECF0DDF57686 /* nanopb-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D98945A8DABDE2C37C8256A617E0153C /* nanopb-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B099D57316DFD17966CF46CEF742FE /* GoogleToolboxForMac-dummy.m */; };
+		FB6A76DC5D2E21E05364E7AA19A53065 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917F93692277C70E4AEF4F5DBA4F851 /* Authentication.swift */; };
+		FC859EBA60096932C55AE6E065E375FF /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C0719FF8D6BFEF53A6177963724F5A /* LocalAuthentication.framework */; };
+		FF2BD40733863DC95DBCE24968664F12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E74B85A221F03973FDA707EB8FDAD8 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B9B7FEDC344B51F96221005F5D5CC7B9 /* PBXContainerItemProxy */ = {
+		057AEE320B4F37C3119EE568583794B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E4DD95323C54A78F879DAB0F1508B8E7;
 			remoteInfo = nanopb;
 		};
-		D7B83A628203AB8CA243884696367B74 /* PBXContainerItemProxy */ = {
+		2605C17CD06A809E51E9A2A710645A4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF1F22AFDA4B3669F50FE5A2F4D5594;
+			remoteInfo = Auth0;
+		};
+		32FAEA1DCC245FCC8FD5FA89F1FA05D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C120742CCDE13BA33321D091160055;
+			remoteInfo = SimpleKeychain;
+		};
+		6111FD45FD2980CA8E4641210B429ABF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C120742CCDE13BA33321D091160055;
+			remoteInfo = SimpleKeychain;
+		};
+		CFB9F692476EA12E5F74E0056F95BA92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -52,74 +139,164 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02FFB05430DDB7BECDEA5C5F598F7657 /* NSURLComponents+OAuth2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLComponents+OAuth2.swift"; path = "Auth0/NSURLComponents+OAuth2.swift"; sourceTree = "<group>"; };
+		0680F46AD7F329CA002107EEE96F73EE /* Pods_MovieReservationApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MovieReservationApplicationUITests.framework; path = "Pods-MovieReservationApplicationUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		084393C6FF5C43F8DA6376CC67B20032 /* Pods-MovieReservationApplicationUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieReservationApplicationUITests-umbrella.h"; sourceTree = "<group>"; };
+		08973631DF42708D1B3BC4586B564F30 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		0DB10C9176C52D688522A80D2CD81421 /* ManagementError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManagementError.swift; path = Auth0/ManagementError.swift; sourceTree = "<group>"; };
+		0F98CA47084E7FA5C83FDAAEEC02F053 /* Auth0Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth0Error.swift; path = Auth0/Auth0Error.swift; sourceTree = "<group>"; };
 		1280EEC3E08AABCF15214DD42A8629A4 /* Pods-MovieReservationApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieReservationApplication.release.xcconfig"; sourceTree = "<group>"; };
+		1344B6BB05D35496903B8D241F9BB424 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147975AED772944778F2D7AA489E0C84 /* Auth0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth0.swift; path = Auth0/Auth0.swift; sourceTree = "<group>"; };
 		225AF9170AF9839227AE0DAEF40C2D80 /* Pods-MovieReservationApplicationUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieReservationApplicationUITests-dummy.m"; sourceTree = "<group>"; };
+		243C0D5A768D3F7F7368C91F3A1DCC35 /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
 		24B4F0D5AE81C4B4668196AC21B75CED /* Pods-MovieReservationApplicationUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieReservationApplicationUITests-resources.sh"; sourceTree = "<group>"; };
+		24C0719FF8D6BFEF53A6177963724F5A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/LocalAuthentication.framework; sourceTree = DEVELOPER_DIR; };
+		250F6C72B53A704963BD71F4766E3374 /* CredentialsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsManager.swift; path = Auth0/CredentialsManager.swift; sourceTree = "<group>"; };
+		26741C59F12FE58BEFC036584F5C1B3E /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
+		287664D85994A5FEDA4844C19FBB3475 /* _ObjectiveWebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveWebAuth.swift; path = Auth0/_ObjectiveWebAuth.swift; sourceTree = "<group>"; };
+		2BA6FB9FFD931D471B7DD752DD65A018 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CFA8752CD941E022D90F0F5C983B94B /* Pods-MovieReservationApplicationTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieReservationApplicationTests-dummy.m"; sourceTree = "<group>"; };
+		2DCA0F9798A6FDC2E495B306CEBF3D52 /* A0ChallengeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0ChallengeGenerator.m; path = Auth0/A0ChallengeGenerator.m; sourceTree = "<group>"; };
+		2E34DE48C7EAAA44B7B45F8E6FA2EAFD /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		2E39B59A81C8CBF43A65869513B80D09 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Auth0/Request.swift; sourceTree = "<group>"; };
+		2E58BC1E83E955218025390100C65263 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		2E8CB6B8443D455B4E9CF3E909FF5034 /* Pods-MovieReservationApplicationUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieReservationApplicationUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		307155BC2ED26E76D6B90AF859430CE1 /* Pods_MovieReservationApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieReservationApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7C7EB88AE05778D533525BE49712C4 /* TouchAuthentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchAuthentication.swift; path = Auth0/TouchAuthentication.swift; sourceTree = "<group>"; };
+		2FC563FD9BD514CDBC7EF23E3B4D2351 /* UserInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = Auth0/UserInfo.swift; sourceTree = "<group>"; };
 		3244BA7465BA02475239641391FBBFCE /* Pods-MovieReservationApplicationTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieReservationApplicationTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		36E84B16162EF61B886584E40B33840B /* Pods-MovieReservationApplication.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MovieReservationApplication.modulemap"; sourceTree = "<group>"; };
+		365CC6263F8C5348A81EA3A8A59DA221 /* NSData+URLSafe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSData+URLSafe.swift"; path = "Auth0/NSData+URLSafe.swift"; sourceTree = "<group>"; };
+		36E84B16162EF61B886584E40B33840B /* Pods-MovieReservationApplication.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MovieReservationApplication.modulemap"; sourceTree = "<group>"; };
+		383CCB61032B019579F1A36BAC3B0962 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		3917F93692277C70E4AEF4F5DBA4F851 /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Auth0/Authentication.swift; sourceTree = "<group>"; };
+		3A9EB0D5AC809E7081B3EC7659EA2B72 /* JSONObjectPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONObjectPayload.swift; path = Auth0/JSONObjectPayload.swift; sourceTree = "<group>"; };
+		3ACCB03ACA0E4E256F9F315EA53816A6 /* Auth0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Auth0-dummy.m"; sourceTree = "<group>"; };
+		3BFA36DD7A19E3039759FB7364ADE2F2 /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
+		3CA68C19FA63C0978500F5631E190A4B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Auth0/Result.swift; sourceTree = "<group>"; };
+		3E032098B481035285B9FD4163BC5978 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		3FAA82C3B0C292EC15DC70BF9248A393 /* _ObjectiveManagementAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveManagementAPI.swift; path = Auth0/_ObjectiveManagementAPI.swift; sourceTree = "<group>"; };
+		42EF7B0104420A46FAE7D125CFB710B2 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		442D1855141DD7DD3AD9930197B8C7F4 /* Pods-MovieReservationApplication-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieReservationApplication-resources.sh"; sourceTree = "<group>"; };
-		4B7236B9B35B25C377B145591377CCD7 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
-		4C9CF7FC5E92D31F27BC038941EA6A5A /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
-		4DED9E673D4BFF32456187BB58E006AC /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
-		4E042612013FB6CD86A7F8229AA61BE1 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		505C5F864762B7FE38AA845332172DE9 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
-		52ED4DCE197912037C60BF2DD6B9E4E6 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
-		54890ED5686660B0B7F6404D997BBFDD /* Pods-MovieReservationApplicationTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MovieReservationApplicationTests.modulemap"; sourceTree = "<group>"; };
-		56CAA223ED48671D00B612679A4CFF93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5781526AD437A00C4907E175A1F9B824 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
-		5857319B3AF21174742939162D58FA56 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		5ACADB9EF2837349C2A5F44E67B33B53 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		4D3E337E41BAF7E47427C54A5A718712 /* A0SimpleKeychain+KeyPair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "A0SimpleKeychain+KeyPair.h"; path = "SimpleKeychain/A0SimpleKeychain+KeyPair.h"; sourceTree = "<group>"; };
+		4DFD9B346CD2FC3BCC98AE807998006D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5277BAED32B8C687D95B016DEBC0ACEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		52E56739873DE9AF15023CC914B10564 /* AuthTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthTransaction.swift; path = Auth0/AuthTransaction.swift; sourceTree = "<group>"; };
+		53DF9E82F6F81BB834F7940B65A04C58 /* SafariAuthenticationCallback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariAuthenticationCallback.swift; path = Auth0/SafariAuthenticationCallback.swift; sourceTree = "<group>"; };
+		54890ED5686660B0B7F6404D997BBFDD /* Pods-MovieReservationApplicationTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MovieReservationApplicationTests.modulemap"; sourceTree = "<group>"; };
+		578887C945648A9AB4E52CC7977FD36C /* SafariWebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariWebAuth.swift; path = Auth0/SafariWebAuth.swift; sourceTree = "<group>"; };
+		5895198A7143043559C8667363C70894 /* SafariSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariSession.swift; path = Auth0/SafariSession.swift; sourceTree = "<group>"; };
 		5BC6B1655F880E0E2416003215B142E7 /* Pods-MovieReservationApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieReservationApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DA498F16374BC0FACFC96335DC30BCB /* Pods-MovieReservationApplicationTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieReservationApplicationTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		63D50750F82422E7843AACD92E2FEAF4 /* Users.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Auth0/Users.swift; sourceTree = "<group>"; };
 		66D2A51F212EAB42A4BCF4198CC803EF /* Pods-MovieReservationApplication-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieReservationApplication-acknowledgements.plist"; sourceTree = "<group>"; };
 		683F63276CC387BBF52049B26642FEBD /* Pods-MovieReservationApplicationTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieReservationApplicationTests-resources.sh"; sourceTree = "<group>"; };
-		6A05DA73D27703E40AF61EAC1D940955 /* Pods_MovieReservationApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieReservationApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BB52DDBB9DFBCB4200FB32809A19889 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9BD37FCC529B84EF196C3CAB20A748 /* AuthenticationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationError.swift; path = Auth0/AuthenticationError.swift; sourceTree = "<group>"; };
+		6AB7119E7215CE2D072561571D9AA282 /* SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimpleKeychain.h; path = SimpleKeychain/SimpleKeychain.h; sourceTree = "<group>"; };
+		6EEEEB949246A1D890FBDF9ED3A15013 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		7041F5C2A2CBE21911878A406F1192A2 /* NSError+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSError+Helper.swift"; path = "Auth0/NSError+Helper.swift"; sourceTree = "<group>"; };
+		72668925735922F7E9E00BFB5F8E19DD /* Requestable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Requestable.swift; path = Auth0/Requestable.swift; sourceTree = "<group>"; };
+		72D245B16E077D2A5861FCD08FB24096 /* SimpleKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SimpleKeychain.modulemap; sourceTree = "<group>"; };
 		72F5FA7AFA42D739682DCBC899551374 /* Pods-MovieReservationApplicationUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieReservationApplicationUITests-frameworks.sh"; sourceTree = "<group>"; };
-		76AFAA5C3128F2005ADECFD36E2085DC /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
-		7B9DDF1EF2BBAE154BC6081D24CB6369 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
-		7E3E28FC93E46C4778C303626C7CA9AB /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
+		758DCE6EE0880AA7252FA0FE27207F9C /* SimpleKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleKeychain.xcconfig; sourceTree = "<group>"; };
+		775AFE5F5462EF100AB363CDCA8E571C /* ControllerModalPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControllerModalPresenter.swift; path = Auth0/ControllerModalPresenter.swift; sourceTree = "<group>"; };
+		783C4433B1D033145D346A16B4C55489 /* Telemetry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Telemetry.swift; path = Auth0/Telemetry.swift; sourceTree = "<group>"; };
+		7AB7798A589A20CA823F499949B3387D /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		7AE01762852E507DEC24B06232EFB3C7 /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
+		7CC711E4C8C3376DAEF5AA0329CB4EFB /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		7D3BABDD6CEA213149F7A5D550C1B09D /* TransactionStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransactionStore.swift; path = Auth0/TransactionStore.swift; sourceTree = "<group>"; };
 		7E5898A6BFD625E49454CACEC3FB672E /* Pods-MovieReservationApplicationTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieReservationApplicationTests-umbrella.h"; sourceTree = "<group>"; };
-		82CEB5BE66D8DB20FC71FA575276F9A5 /* Pods_MovieReservationApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieReservationApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C0E63068D67B950D3A19D9F5E08ACF /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81359C6BC07B0133BBCC48607DE29892 /* SafariAuthenticationSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariAuthenticationSession.swift; path = Auth0/SafariAuthenticationSession.swift; sourceTree = "<group>"; };
 		83C7D5412DEFE8C53289732F840DAED8 /* Pods-MovieReservationApplicationUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieReservationApplicationUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		841E491E4F984559D8FACA8D9B180DBA /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
+		853C72DE9B0EE17D63AF9B0FB07706E6 /* WebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebAuth.swift; path = Auth0/WebAuth.swift; sourceTree = "<group>"; };
 		895BC36B81C96BB4EAE0C9C7BDF1C319 /* Pods-MovieReservationApplication-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieReservationApplication-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8DC6188353307D7539A2D86B7160AC82 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F0A0B2F788848A43580C8F3FBBA24D7 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96DE222DE413BDFDBA6170A07CC97B8D /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		8A862DD21A02587DB8365AD8284A21FE /* Pods_MovieReservationApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MovieReservationApplication.framework; path = "Pods-MovieReservationApplication.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF567EBBF51E9510EED7FD4943B5305 /* SimpleKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleKeychain.framework; path = SimpleKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		928E35FAF6020BFFAC5789225EAF1953 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9614B9AC00BD718B2E8AB707176AE404 /* UserPatchAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserPatchAttributes.swift; path = Auth0/UserPatchAttributes.swift; sourceTree = "<group>"; };
+		96E74B85A221F03973FDA707EB8FDAD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9799C0ABEEB8DE4B2C4988CF176E476D /* Pods_MovieReservationApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MovieReservationApplicationTests.framework; path = "Pods-MovieReservationApplicationTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98E1FE81BA6FEB51750EF4D37A6F2BAA /* WebAuthError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebAuthError.swift; path = Auth0/WebAuthError.swift; sourceTree = "<group>"; };
+		99DAD9EAA7C40FCEB4414AAEDF5E1809 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		9A4A5C5D0CEE923C83FB1FED304E147C /* Auth0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Auth0-prefix.pch"; sourceTree = "<group>"; };
+		9E094AF2B61E4F01C77B6CD543CE0A29 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
+		A090FEDCC753B4CD72079B91CF3034BE /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		A0D15138E722BEF48ED0D0CF26A9C604 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Auth0/Response.swift; sourceTree = "<group>"; };
+		A1CD8B40383597881C5C4D82B2FCC27B /* Credentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Credentials.swift; path = Auth0/Credentials.swift; sourceTree = "<group>"; };
+		A1EDFAAAB547A854A8F6293AB5F8E4E1 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		A2BB9A734D1122E8EA3F6F44D9A6C204 /* SimpleKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleKeychain-dummy.m"; sourceTree = "<group>"; };
 		A2BE2907D477602ADADD123418AA50E6 /* Pods-MovieReservationApplication-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieReservationApplication-frameworks.sh"; sourceTree = "<group>"; };
-		A9B3EF11B1D829B671E6EF9C907FE7E2 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		AA70056BAD8EA3D683367B686F1E6B09 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
-		AF577CB3FB3CA827E64E6F3625F4804A /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_encode.c; sourceTree = "<group>"; };
+		A3F2BCC46DE5810F852617BEA79B5DE9 /* AuthSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthSession.swift; path = Auth0/AuthSession.swift; sourceTree = "<group>"; };
+		A4A42C1C867C51B226926BE6E962D66C /* A0SimpleKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0SimpleKeychain.m; path = SimpleKeychain/A0SimpleKeychain.m; sourceTree = "<group>"; };
+		A83E51A494AE641E12B49B927EF5D3B8 /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
+		A83EDC9137E84018ADE0117BCDCB02E2 /* Auth0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Auth0-umbrella.h"; sourceTree = "<group>"; };
+		AA68C3729A24CCCB96CB2AB637FB550F /* SimpleKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD7E95D026B29FA57A08D1DF1FDD59B0 /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Auth0/Date.swift; sourceTree = "<group>"; };
+		B2202146D759D0FFE4A121E58D31DEA8 /* SimpleKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKeychain-umbrella.h"; sourceTree = "<group>"; };
+		B2605B7FDB2F00BAD7205A3AF9629924 /* ResponseType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseType.swift; path = Auth0/ResponseType.swift; sourceTree = "<group>"; };
+		B4BAACB39D2851CE1E6740917F5BCE9A /* A0SimpleKeychain+KeyPair.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "A0SimpleKeychain+KeyPair.m"; path = "SimpleKeychain/A0SimpleKeychain+KeyPair.m"; sourceTree = "<group>"; };
+		B54596C43E4CCA6AEFE0EFAC93DBF3CE /* Handlers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Handlers.swift; path = Auth0/Handlers.swift; sourceTree = "<group>"; };
 		B62D086F052C8D4672C7518DB1695A82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6C058AB0CA1E7DD068F44BA81291381 /* A0ChallengeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0ChallengeGenerator.h; path = Auth0/A0ChallengeGenerator.h; sourceTree = "<group>"; };
+		B8AE40D20476D787ACFCA9A202B3D9D1 /* Auth0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Auth0.xcconfig; sourceTree = "<group>"; };
+		B8F7BDD50EDFFFCB2CAABAA28FFE0EB7 /* Identity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identity.swift; path = Auth0/Identity.swift; sourceTree = "<group>"; };
+		BBC6E01AEF29C50E36D5C61CEF7155FD /* NSURL+Auth0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+Auth0.swift"; path = "Auth0/NSURL+Auth0.swift"; sourceTree = "<group>"; };
 		BCF87092641D2BBD82247C5F6FB999C7 /* Pods-MovieReservationApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieReservationApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BF1A6257C603208E8F69C1551B338D30 /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = nanopb.modulemap; sourceTree = "<group>"; };
-		CB1DA5FCB6FC9EDA0D22883C685735B5 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_common.c; sourceTree = "<group>"; };
+		BD22F422EE4AF236E034A91282B98119 /* Auth0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Auth0.h; path = Auth0/Auth0.h; sourceTree = "<group>"; };
+		BD248C0F99209CFE005C85D40C9CEA54 /* AuthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthProvider.swift; path = Auth0/AuthProvider.swift; sourceTree = "<group>"; };
+		C05905F4A802DA682AA5F28EA5CAE70A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B099D57316DFD17966CF46CEF742FE /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		C310373369B622129A4EDE3438BD8472 /* NativeAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeAuth.swift; path = Auth0/NativeAuth.swift; sourceTree = "<group>"; };
+		C66FC2863C3ECF43E56142A19C270F49 /* Auth0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Auth0.modulemap; sourceTree = "<group>"; };
+		C86E6F7B16B0B473731CC6A33DF8135A /* OAuth2Grant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Grant.swift; path = Auth0/OAuth2Grant.swift; sourceTree = "<group>"; };
+		C9ED1EE1105CEBEE78883568D754F882 /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = nanopb.modulemap; sourceTree = "<group>"; };
 		CB60D3492F5BE00E1DFBEF7A7998FE22 /* Pods-MovieReservationApplication-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieReservationApplication-umbrella.h"; sourceTree = "<group>"; };
 		CF38E96C01ACF57955276112E67C5455 /* Pods-MovieReservationApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieReservationApplication.debug.xcconfig"; sourceTree = "<group>"; };
-		D61D0D5052323E3EFCC00D50407A865E /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		D21D4F7E410764FC2D4B58B4DA44FB87 /* SimpleKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKeychain-prefix.pch"; sourceTree = "<group>"; };
+		D2DAAE7E19C66D2DE254E55632A8CFC8 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		D3A1588A7EA1A408C397F1F37D6501CB /* Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Management.swift; path = Auth0/Management.swift; sourceTree = "<group>"; };
+		D951D35F36FE62DB74F1D34739002BE7 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		D98945A8DABDE2C37C8256A617E0153C /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
 		DA9CFEA4CDAAFD82F39EE3CE835BCE44 /* Pods-MovieReservationApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieReservationApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DBDA70EF08AAE5CA4B2A22A4DB0B19A6 /* Pods-MovieReservationApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieReservationApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
-		DD9E8F12766FD7202402AD690FB605B6 /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
+		E23A7E705E293928FE2DB63DF71C3817 /* Auth0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Auth0.framework; path = Auth0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23BB2095A3D225526E88017D007D7F5 /* Profile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Auth0/Profile.swift; sourceTree = "<group>"; };
 		E283C28DF6D9616A400B319DA539649E /* Pods-MovieReservationApplication-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieReservationApplication-dummy.m"; sourceTree = "<group>"; };
-		E461370646635AFEF7EFC41F3E574BC6 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
-		E659260E0916AB51199ACB8A25694DB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4B058C743C0323E1F7E0BFC7539E252 /* Auth0Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth0Authentication.swift; path = Auth0/Auth0Authentication.swift; sourceTree = "<group>"; };
+		E6B566640D9580C772B4C10E2A9B9258 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		E6D21B03D4078FEB139AD22BC464B6A8 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Auth0/Logger.swift; sourceTree = "<group>"; };
 		E943B4582179F24165747644EC5629F0 /* Pods-MovieReservationApplicationTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieReservationApplicationTests-frameworks.sh"; sourceTree = "<group>"; };
-		EA772F7A06348F33C61B7286F52EEF50 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		E9DDEFCEC6ADF2199685C46C068DAFB1 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		ED50FE6ADF1DA898C68D140F729DD59E /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
+		F3BC3FA6FF5CBD5F43AEAA5B1D6827EE /* _ObjectiveAuthenticationAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveAuthenticationAPI.swift; path = Auth0/_ObjectiveAuthenticationAPI.swift; sourceTree = "<group>"; };
 		F540DAF88268A2664DD399CBBC12AA89 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6156B8D6D3DD90AEE4394E6A26A89FE /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
-		FDD21E17E8E5B2C8C933CC8A96F3B33C /* Pods-MovieReservationApplicationUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MovieReservationApplicationUITests.modulemap"; sourceTree = "<group>"; };
+		F6146E576C19D2F4C785F3074830E68C /* A0SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SimpleKeychain.h; path = SimpleKeychain/A0SimpleKeychain.h; sourceTree = "<group>"; };
+		F6F59B6B805EC63573E8AA68D2E65AA8 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
+		F8CA1EB7A373034519176C46C9F563B7 /* Loggable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loggable.swift; path = Auth0/Loggable.swift; sourceTree = "<group>"; };
+		FA1779727239F5E33EAB278CEB4C70A0 /* CredentialsManagerError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsManagerError.swift; path = Auth0/CredentialsManagerError.swift; sourceTree = "<group>"; };
+		FCE40806C872DF879F221A78C4DB1C13 /* SilentSafariViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SilentSafariViewController.swift; path = Auth0/SilentSafariViewController.swift; sourceTree = "<group>"; };
+		FDD21E17E8E5B2C8C933CC8A96F3B33C /* Pods-MovieReservationApplicationUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MovieReservationApplicationUITests.modulemap"; sourceTree = "<group>"; };
 		FE5505FEF8AC0064DCE9AF85F0A1E1FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF6F39ECB24CE5CFAA775B1CC1E891D9 /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2DB650D6461D7E6DDE097B8B85FE19C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE76680B385511796AB592354F847DA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E9959243071072BCEE0734007DD178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2D55D7C2F4A6C360C744DB68C4D296 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D8C5281173B52FFD7EA71D91D2DF30D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,19 +313,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6871AF50BF1F80684A8A138EF206979 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8259D3F591674DD8D797C4AE93A27E /* Foundation.framework in Frameworks */,
+				FC859EBA60096932C55AE6E065E375FF /* LocalAuthentication.framework in Frameworks */,
+				34018CB72B29BDDA357587EDE799CBFA /* SafariServices.framework in Frameworks */,
+				B2ADB4E3C5B915239EE6E2EB2110D50F /* SimpleKeychain.framework in Frameworks */,
+				A26F4D1353F41B40EEF4F4049ACD4EBB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA6E50737D03269DB58EB71850B8FD2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DE7B8D368A91EAE3E81A4C8830A83932 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED9F4535805B316779256A8E1F8BA126 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B536989DBF8EF6302318A54C2203D27 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,29 +344,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26AC2BCD6590CC43B9201B747C0D96A3 /* nanopb */ = {
+		02691BD323A144D6A9980FD15ABA9866 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				76AFAA5C3128F2005ADECFD36E2085DC /* pb.h */,
-				CB1DA5FCB6FC9EDA0D22883C685735B5 /* pb_common.c */,
-				841E491E4F984559D8FACA8D9B180DBA /* pb_common.h */,
-				AA70056BAD8EA3D683367B686F1E6B09 /* pb_decode.c */,
-				7E3E28FC93E46C4778C303626C7CA9AB /* pb_decode.h */,
-				AF577CB3FB3CA827E64E6F3625F4804A /* pb_encode.c */,
-				DD9E8F12766FD7202402AD690FB605B6 /* pb_encode.h */,
-				65E3046628F4D647CEAAF43F67601B15 /* decode */,
-				DDAA44E2142E64238AC963E5FEE6F255 /* encode */,
-				E2263F271769C0C11030EBFC54582B2D /* Support Files */,
+				D3D145E7FE9718859DBE29A2D32A5DB3 /* Frameworks */,
 			);
-			path = nanopb;
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
-		35B180DE65DF96286E579D4B71276075 /* FirebaseInstanceID */ = {
+		03C335AB5C969D70B00BAFD98303696E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9423BF591DA4C65CAEC62D1E98DA477F /* Frameworks */,
+				C66FC2863C3ECF43E56142A19C270F49 /* Auth0.modulemap */,
+				B8AE40D20476D787ACFCA9A202B3D9D1 /* Auth0.xcconfig */,
+				3ACCB03ACA0E4E256F9F315EA53816A6 /* Auth0-dummy.m */,
+				9A4A5C5D0CEE923C83FB1FED304E147C /* Auth0-prefix.pch */,
+				A83EDC9137E84018ADE0117BCDCB02E2 /* Auth0-umbrella.h */,
+				2BA6FB9FFD931D471B7DD752DD65A018 /* Info.plist */,
 			);
-			path = FirebaseInstanceID;
+			name = "Support Files";
+			path = "../Target Support Files/Auth0";
+			sourceTree = "<group>";
+		};
+		1189704DAA3E3DA287439261F52CB2EE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				96E74B85A221F03973FDA707EB8FDAD8 /* Foundation.framework */,
+				24C0719FF8D6BFEF53A6177963724F5A /* LocalAuthentication.framework */,
+				ED50FE6ADF1DA898C68D140F729DD59E /* SafariServices.framework */,
+				5277BAED32B8C687D95B016DEBC0ACEE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1DF3E5DABBCE0E90C38D431C45352AA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA68C3729A24CCCB96CB2AB637FB550F /* SimpleKeychain.framework */,
+				1189704DAA3E3DA287439261F52CB2EE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D87DF21D894BBA2EFD2235A0E2AE028 /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				8DEE65C32F92FC3C309E5D62CAC83C3E /* Defines */,
+				A312F8103863A4C905220521877A0EAD /* NSData+zlib */,
+				79F08F55AFF83DA64EDAE0700F307DBD /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
 			sourceTree = "<group>";
 		};
 		53DBE6516A6CC2983EF86AE74213FC2F /* Pods-MovieReservationApplicationUITests */ = {
@@ -204,6 +414,20 @@
 			);
 			name = "Pods-MovieReservationApplicationUITests";
 			path = "Target Support Files/Pods-MovieReservationApplicationUITests";
+			sourceTree = "<group>";
+		};
+		58C65EE9D5E2BAF521585930BFAD7671 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DFD9B346CD2FC3BCC98AE807998006D /* Info.plist */,
+				72D245B16E077D2A5861FCD08FB24096 /* SimpleKeychain.modulemap */,
+				758DCE6EE0880AA7252FA0FE27207F9C /* SimpleKeychain.xcconfig */,
+				A2BB9A734D1122E8EA3F6F44D9A6C204 /* SimpleKeychain-dummy.m */,
+				D21D4F7E410764FC2D4B58B4DA44FB87 /* SimpleKeychain-prefix.pch */,
+				B2202146D759D0FFE4A121E58D31DEA8 /* SimpleKeychain-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SimpleKeychain";
 			sourceTree = "<group>";
 		};
 		621A62B47FB1ECB9B581698BA3E13804 /* Pods-MovieReservationApplication */ = {
@@ -242,64 +466,134 @@
 			path = "Target Support Files/Pods-MovieReservationApplicationTests";
 			sourceTree = "<group>";
 		};
-		65E3046628F4D647CEAAF43F67601B15 /* decode */ = {
+		6B1D4599B634DB405DFBE86EB1286D3B /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				9313234AEAB236098FDB36A54947C944 /* Core */,
 			);
-			name = decode;
+			name = Firebase;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
-		6622A43E648F09BFA3C3FFED517547E4 /* Frameworks */ = {
+		79F08F55AFF83DA64EDAE0700F307DBD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				52ED4DCE197912037C60BF2DD6B9E4E6 /* FirebaseCore.framework */,
-				E461370646635AFEF7EFC41F3E574BC6 /* FirebaseCoreDiagnostics.framework */,
-				4DED9E673D4BFF32456187BB58E006AC /* FirebaseNanoPB.framework */,
+				2E34DE48C7EAAA44B7B45F8E6FA2EAFD /* GoogleToolboxForMac.modulemap */,
+				6EEEEB949246A1D890FBDF9ED3A15013 /* GoogleToolboxForMac.xcconfig */,
+				C0B099D57316DFD17966CF46CEF742FE /* GoogleToolboxForMac-dummy.m */,
+				08973631DF42708D1B3BC4586B564F30 /* GoogleToolboxForMac-prefix.pch */,
+				D2DAAE7E19C66D2DE254E55632A8CFC8 /* GoogleToolboxForMac-umbrella.h */,
+				1344B6BB05D35496903B8D241F9BB424 /* Info.plist */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D20196F804763B3817DC669C74EEB701 /* Pods */,
-				A791D0E7884130ACCF215AEBA4EA8F0D /* Products */,
+				1DF3E5DABBCE0E90C38D431C45352AA4 /* Frameworks */,
+				A0780950F8A052A97FF8C6E9F2ED0F7C /* Pods */,
+				ADC35D30F3356B3E958BF4205890394F /* Products */,
 				A2F5731E8FB558D4A5F04AE304EC4BA2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7FE25D69C3023269B595924C6F0132A8 /* Core */ = {
+		827C456C186848DC87DFEF7B7046DA40 /* nanopb */ = {
 			isa = PBXGroup;
 			children = (
-				5781526AD437A00C4907E175A1F9B824 /* Firebase.h */,
+				243C0D5A768D3F7F7368C91F3A1DCC35 /* pb.h */,
+				E9DDEFCEC6ADF2199685C46C068DAFB1 /* pb_common.c */,
+				7AE01762852E507DEC24B06232EFB3C7 /* pb_common.h */,
+				E6B566640D9580C772B4C10E2A9B9258 /* pb_decode.c */,
+				26741C59F12FE58BEFC036584F5C1B3E /* pb_decode.h */,
+				7CC711E4C8C3376DAEF5AA0329CB4EFB /* pb_encode.c */,
+				A83E51A494AE641E12B49B927EF5D3B8 /* pb_encode.h */,
+				C221AC8DAD148D2AA518EC1C7B899DED /* decode */,
+				A44F453D5DAAB980248A0CBD62340DD2 /* encode */,
+				9DACDF9C0BC005F1FB60B8DA66389E4E /* Support Files */,
+			);
+			name = nanopb;
+			path = nanopb;
+			sourceTree = "<group>";
+		};
+		8B5BA7984EF21B7B2A2CEC0582176466 /* SimpleKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				F6146E576C19D2F4C785F3074830E68C /* A0SimpleKeychain.h */,
+				A4A42C1C867C51B226926BE6E962D66C /* A0SimpleKeychain.m */,
+				4D3E337E41BAF7E47427C54A5A718712 /* A0SimpleKeychain+KeyPair.h */,
+				B4BAACB39D2851CE1E6740917F5BCE9A /* A0SimpleKeychain+KeyPair.m */,
+				6AB7119E7215CE2D072561571D9AA282 /* SimpleKeychain.h */,
+				58C65EE9D5E2BAF521585930BFAD7671 /* Support Files */,
+			);
+			name = SimpleKeychain;
+			path = SimpleKeychain;
+			sourceTree = "<group>";
+		};
+		8DEE65C32F92FC3C309E5D62CAC83C3E /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				99DAD9EAA7C40FCEB4414AAEDF5E1809 /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		92B5BEF0DE017E6AFEFB0D2C62ECC530 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AB7798A589A20CA823F499949B3387D /* FirebaseCore.framework */,
+				383CCB61032B019579F1A36BAC3B0962 /* FirebaseCoreDiagnostics.framework */,
+				A090FEDCC753B4CD72079B91CF3034BE /* FirebaseNanoPB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9313234AEAB236098FDB36A54947C944 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D951D35F36FE62DB74F1D34739002BE7 /* Firebase.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
 		};
-		80C3C3A055A13D9D785ABCB328851306 /* FirebaseAnalytics */ = {
+		93544F715BE21F8E4D7C3C3CF3EA1DF8 /* FirebaseCore */ = {
 			isa = PBXGroup;
 			children = (
-				9D483E403F20E4E7732519140738498E /* Frameworks */,
+				92B5BEF0DE017E6AFEFB0D2C62ECC530 /* Frameworks */,
 			);
-			path = FirebaseAnalytics;
+			name = FirebaseCore;
+			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
-		9423BF591DA4C65CAEC62D1E98DA477F /* Frameworks */ = {
+		9DACDF9C0BC005F1FB60B8DA66389E4E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5857319B3AF21174742939162D58FA56 /* FirebaseInstanceID.framework */,
+				C05905F4A802DA682AA5F28EA5CAE70A /* Info.plist */,
+				C9ED1EE1105CEBEE78883568D754F882 /* nanopb.modulemap */,
+				F6F59B6B805EC63573E8AA68D2E65AA8 /* nanopb.xcconfig */,
+				3BFA36DD7A19E3039759FB7364ADE2F2 /* nanopb-dummy.m */,
+				9E094AF2B61E4F01C77B6CD543CE0A29 /* nanopb-prefix.pch */,
+				D98945A8DABDE2C37C8256A617E0153C /* nanopb-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/nanopb";
 			sourceTree = "<group>";
 		};
-		9D483E403F20E4E7732519140738498E /* Frameworks */ = {
+		A0780950F8A052A97FF8C6E9F2ED0F7C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A9B3EF11B1D829B671E6EF9C907FE7E2 /* FirebaseAnalytics.framework */,
+				EF903338973C878329057B1738901D12 /* Auth0 */,
+				6B1D4599B634DB405DFBE86EB1286D3B /* Firebase */,
+				DC2CB5A1A0BEAD62039DE83D92402DD5 /* FirebaseAnalytics */,
+				93544F715BE21F8E4D7C3C3CF3EA1DF8 /* FirebaseCore */,
+				02691BD323A144D6A9980FD15ABA9866 /* FirebaseInstanceID */,
+				4D87DF21D894BBA2EFD2235A0E2AE028 /* GoogleToolboxForMac */,
+				827C456C186848DC87DFEF7B7046DA40 /* nanopb */,
+				8B5BA7984EF21B7B2A2CEC0582176466 /* SimpleKeychain */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A2F5731E8FB558D4A5F04AE304EC4BA2 /* Targets Support Files */ = {
@@ -312,123 +606,126 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A31CE44F23BD44F7DAAFB31F03A5A658 /* NSData+zlib */ = {
+		A312F8103863A4C905220521877A0EAD /* NSData+zlib */ = {
 			isa = PBXGroup;
 			children = (
-				EA772F7A06348F33C61B7286F52EEF50 /* GTMNSData+zlib.h */,
-				F6156B8D6D3DD90AEE4394E6A26A89FE /* GTMNSData+zlib.m */,
+				3E032098B481035285B9FD4163BC5978 /* GTMNSData+zlib.h */,
+				A1EDFAAAB547A854A8F6293AB5F8E4E1 /* GTMNSData+zlib.m */,
 			);
 			name = "NSData+zlib";
 			sourceTree = "<group>";
 		};
-		A791D0E7884130ACCF215AEBA4EA8F0D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6BB52DDBB9DFBCB4200FB32809A19889 /* GoogleToolboxForMac.framework */,
-				8DC6188353307D7539A2D86B7160AC82 /* nanopb.framework */,
-				307155BC2ED26E76D6B90AF859430CE1 /* Pods_MovieReservationApplication.framework */,
-				82CEB5BE66D8DB20FC71FA575276F9A5 /* Pods_MovieReservationApplicationTests.framework */,
-				6A05DA73D27703E40AF61EAC1D940955 /* Pods_MovieReservationApplicationUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D20196F804763B3817DC669C74EEB701 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D52BBEEEDDC743540AC81A7F5CC6B0D4 /* Firebase */,
-				80C3C3A055A13D9D785ABCB328851306 /* FirebaseAnalytics */,
-				E6CB943C73DCEC88D96BDAA383BFBB9A /* FirebaseCore */,
-				35B180DE65DF96286E579D4B71276075 /* FirebaseInstanceID */,
-				FF8C567B4D0A26B622469EC328AEB1EF /* GoogleToolboxForMac */,
-				26AC2BCD6590CC43B9201B747C0D96A3 /* nanopb */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D52BBEEEDDC743540AC81A7F5CC6B0D4 /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				7FE25D69C3023269B595924C6F0132A8 /* Core */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		DDAA44E2142E64238AC963E5FEE6F255 /* encode */ = {
+		A44F453D5DAAB980248A0CBD62340DD2 /* encode */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = encode;
 			sourceTree = "<group>";
 		};
-		E2263F271769C0C11030EBFC54582B2D /* Support Files */ = {
+		ADC35D30F3356B3E958BF4205890394F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				56CAA223ED48671D00B612679A4CFF93 /* Info.plist */,
-				BF1A6257C603208E8F69C1551B338D30 /* nanopb.modulemap */,
-				8F0A0B2F788848A43580C8F3FBBA24D7 /* nanopb.xcconfig */,
-				4C9CF7FC5E92D31F27BC038941EA6A5A /* nanopb-dummy.m */,
-				4B7236B9B35B25C377B145591377CCD7 /* nanopb-prefix.pch */,
-				FF6F39ECB24CE5CFAA775B1CC1E891D9 /* nanopb-umbrella.h */,
+				E23A7E705E293928FE2DB63DF71C3817 /* Auth0.framework */,
+				80C0E63068D67B950D3A19D9F5E08ACF /* GoogleToolboxForMac.framework */,
+				928E35FAF6020BFFAC5789225EAF1953 /* nanopb.framework */,
+				8A862DD21A02587DB8365AD8284A21FE /* Pods_MovieReservationApplication.framework */,
+				9799C0ABEEB8DE4B2C4988CF176E476D /* Pods_MovieReservationApplicationTests.framework */,
+				0680F46AD7F329CA002107EEE96F73EE /* Pods_MovieReservationApplicationUITests.framework */,
+				8AF567EBBF51E9510EED7FD4943B5305 /* SimpleKeychain.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/nanopb";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		E6CB943C73DCEC88D96BDAA383BFBB9A /* FirebaseCore */ = {
+		C221AC8DAD148D2AA518EC1C7B899DED /* decode */ = {
 			isa = PBXGroup;
 			children = (
-				6622A43E648F09BFA3C3FFED517547E4 /* Frameworks */,
 			);
-			path = FirebaseCore;
+			name = decode;
 			sourceTree = "<group>";
 		};
-		E91EC75B28AD480FFDC1E0CB5FE25045 /* Support Files */ = {
+		CF40D6E9323352EA703D8E477A5CEC76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5ACADB9EF2837349C2A5F44E67B33B53 /* GoogleToolboxForMac.modulemap */,
-				D61D0D5052323E3EFCC00D50407A865E /* GoogleToolboxForMac.xcconfig */,
-				505C5F864762B7FE38AA845332172DE9 /* GoogleToolboxForMac-dummy.m */,
-				96DE222DE413BDFDBA6170A07CC97B8D /* GoogleToolboxForMac-prefix.pch */,
-				7B9DDF1EF2BBAE154BC6081D24CB6369 /* GoogleToolboxForMac-umbrella.h */,
-				E659260E0916AB51199ACB8A25694DB6 /* Info.plist */,
+				2E58BC1E83E955218025390100C65263 /* FirebaseAnalytics.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleToolboxForMac";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FDFA9160E6192D29983621263A722A0D /* Defines */ = {
+		D3D145E7FE9718859DBE29A2D32A5DB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E042612013FB6CD86A7F8229AA61BE1 /* GTMDefines.h */,
+				42EF7B0104420A46FAE7D125CFB710B2 /* FirebaseInstanceID.framework */,
 			);
-			name = Defines;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FF8C567B4D0A26B622469EC328AEB1EF /* GoogleToolboxForMac */ = {
+		DC2CB5A1A0BEAD62039DE83D92402DD5 /* FirebaseAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				FDFA9160E6192D29983621263A722A0D /* Defines */,
-				A31CE44F23BD44F7DAAFB31F03A5A658 /* NSData+zlib */,
-				E91EC75B28AD480FFDC1E0CB5FE25045 /* Support Files */,
+				CF40D6E9323352EA703D8E477A5CEC76 /* Frameworks */,
 			);
-			path = GoogleToolboxForMac;
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		EF903338973C878329057B1738901D12 /* Auth0 */ = {
+			isa = PBXGroup;
+			children = (
+				F3BC3FA6FF5CBD5F43AEAA5B1D6827EE /* _ObjectiveAuthenticationAPI.swift */,
+				3FAA82C3B0C292EC15DC70BF9248A393 /* _ObjectiveManagementAPI.swift */,
+				287664D85994A5FEDA4844C19FBB3475 /* _ObjectiveWebAuth.swift */,
+				B6C058AB0CA1E7DD068F44BA81291381 /* A0ChallengeGenerator.h */,
+				2DCA0F9798A6FDC2E495B306CEBF3D52 /* A0ChallengeGenerator.m */,
+				BD22F422EE4AF236E034A91282B98119 /* Auth0.h */,
+				147975AED772944778F2D7AA489E0C84 /* Auth0.swift */,
+				E4B058C743C0323E1F7E0BFC7539E252 /* Auth0Authentication.swift */,
+				0F98CA47084E7FA5C83FDAAEEC02F053 /* Auth0Error.swift */,
+				3917F93692277C70E4AEF4F5DBA4F851 /* Authentication.swift */,
+				6A9BD37FCC529B84EF196C3CAB20A748 /* AuthenticationError.swift */,
+				BD248C0F99209CFE005C85D40C9CEA54 /* AuthProvider.swift */,
+				A3F2BCC46DE5810F852617BEA79B5DE9 /* AuthSession.swift */,
+				52E56739873DE9AF15023CC914B10564 /* AuthTransaction.swift */,
+				775AFE5F5462EF100AB363CDCA8E571C /* ControllerModalPresenter.swift */,
+				A1CD8B40383597881C5C4D82B2FCC27B /* Credentials.swift */,
+				250F6C72B53A704963BD71F4766E3374 /* CredentialsManager.swift */,
+				FA1779727239F5E33EAB278CEB4C70A0 /* CredentialsManagerError.swift */,
+				AD7E95D026B29FA57A08D1DF1FDD59B0 /* Date.swift */,
+				B54596C43E4CCA6AEFE0EFAC93DBF3CE /* Handlers.swift */,
+				B8F7BDD50EDFFFCB2CAABAA28FFE0EB7 /* Identity.swift */,
+				3A9EB0D5AC809E7081B3EC7659EA2B72 /* JSONObjectPayload.swift */,
+				F8CA1EB7A373034519176C46C9F563B7 /* Loggable.swift */,
+				E6D21B03D4078FEB139AD22BC464B6A8 /* Logger.swift */,
+				D3A1588A7EA1A408C397F1F37D6501CB /* Management.swift */,
+				0DB10C9176C52D688522A80D2CD81421 /* ManagementError.swift */,
+				C310373369B622129A4EDE3438BD8472 /* NativeAuth.swift */,
+				365CC6263F8C5348A81EA3A8A59DA221 /* NSData+URLSafe.swift */,
+				7041F5C2A2CBE21911878A406F1192A2 /* NSError+Helper.swift */,
+				BBC6E01AEF29C50E36D5C61CEF7155FD /* NSURL+Auth0.swift */,
+				02FFB05430DDB7BECDEA5C5F598F7657 /* NSURLComponents+OAuth2.swift */,
+				C86E6F7B16B0B473731CC6A33DF8135A /* OAuth2Grant.swift */,
+				E23BB2095A3D225526E88017D007D7F5 /* Profile.swift */,
+				2E39B59A81C8CBF43A65869513B80D09 /* Request.swift */,
+				72668925735922F7E9E00BFB5F8E19DD /* Requestable.swift */,
+				A0D15138E722BEF48ED0D0CF26A9C604 /* Response.swift */,
+				B2605B7FDB2F00BAD7205A3AF9629924 /* ResponseType.swift */,
+				3CA68C19FA63C0978500F5631E190A4B /* Result.swift */,
+				53DF9E82F6F81BB834F7940B65A04C58 /* SafariAuthenticationCallback.swift */,
+				81359C6BC07B0133BBCC48607DE29892 /* SafariAuthenticationSession.swift */,
+				5895198A7143043559C8667363C70894 /* SafariSession.swift */,
+				578887C945648A9AB4E52CC7977FD36C /* SafariWebAuth.swift */,
+				FCE40806C872DF879F221A78C4DB1C13 /* SilentSafariViewController.swift */,
+				783C4433B1D033145D346A16B4C55489 /* Telemetry.swift */,
+				2F7C7EB88AE05778D533525BE49712C4 /* TouchAuthentication.swift */,
+				7D3BABDD6CEA213149F7A5D550C1B09D /* TransactionStore.swift */,
+				2FC563FD9BD514CDBC7EF23E3B4D2351 /* UserInfo.swift */,
+				9614B9AC00BD718B2E8AB707176AE404 /* UserPatchAttributes.swift */,
+				63D50750F82422E7843AACD92E2FEAF4 /* Users.swift */,
+				853C72DE9B0EE17D63AF9B0FB07706E6 /* WebAuth.swift */,
+				98E1FE81BA6FEB51750EF4D37A6F2BAA /* WebAuthError.swift */,
+				03C335AB5C969D70B00BAFD98303696E /* Support Files */,
+			);
+			name = Auth0;
+			path = Auth0;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +736,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DEB20C8AD049A66AD698CA5463619E5 /* Pods-MovieReservationApplicationTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27A3B44F75AADA4C3CC58A4D450B8CDF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				374307303589D991F2C8C7D9A6F8CBB6 /* Pods-MovieReservationApplication-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,11 +767,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F5EE6FB21A5ABF5BD030B8B4E4F9651 /* Headers */ = {
+		57AB49C3AB48E31730FD5ABCB4609722 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				481E4F6C6C75C74F309638F532CF107C /* Pods-MovieReservationApplication-umbrella.h in Headers */,
+				7DAA19351A031238477FD00E37B2B7C3 /* A0ChallengeGenerator.h in Headers */,
+				68B8D7E4F90ADFC40FA36307B7B78271 /* Auth0-umbrella.h in Headers */,
+				7E601CA5B337F17111F4451E89A11AFA /* Auth0.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C66382453F29862FD6C83B60C916C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248D3BE3E9416ACBA0752F6F9C204B45 /* A0SimpleKeychain+KeyPair.h in Headers */,
+				5D29D13FA9C00917707107EC141FCE09 /* A0SimpleKeychain.h in Headers */,
+				2C3BA869E7073EBE4C6B07BF1B41DE58 /* SimpleKeychain-umbrella.h in Headers */,
+				C9F4E38A28EB45B9FA638FE520D36FA6 /* SimpleKeychain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +815,28 @@
 			);
 			name = GoogleToolboxForMac;
 			productName = GoogleToolboxForMac;
-			productReference = 6BB52DDBB9DFBCB4200FB32809A19889 /* GoogleToolboxForMac.framework */;
+			productReference = 80C0E63068D67B950D3A19D9F5E08ACF /* GoogleToolboxForMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		09CEC8D14CC111A8F55101D600420762 /* Pods-MovieReservationApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621570BF1F877D6A4C9FA9FF6515641B /* Build configuration list for PBXNativeTarget "Pods-MovieReservationApplication" */;
+			buildPhases = (
+				6D249F8FF23D752E4903DE0AEB7116F8 /* Sources */,
+				2DB650D6461D7E6DDE097B8B85FE19C6 /* Frameworks */,
+				27A3B44F75AADA4C3CC58A4D450B8CDF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A65D181C6C851CEC89A5BAF88957900 /* PBXTargetDependency */,
+				BCCEEFD00E0589AFCD53619DD8CC74BE /* PBXTargetDependency */,
+				79C61D445A461A10E921A25D3F1554FC /* PBXTargetDependency */,
+				6C0495BFF37DCD42F5DC2FE2B1E5C1D1 /* PBXTargetDependency */,
+			);
+			name = "Pods-MovieReservationApplication";
+			productName = "Pods-MovieReservationApplication";
+			productReference = 8A862DD21A02587DB8365AD8284A21FE /* Pods_MovieReservationApplication.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3C2DCCFC406BA188AA3E88F23AF85975 /* Pods-MovieReservationApplicationUITests */ = {
@@ -514,26 +853,24 @@
 			);
 			name = "Pods-MovieReservationApplicationUITests";
 			productName = "Pods-MovieReservationApplicationUITests";
-			productReference = 6A05DA73D27703E40AF61EAC1D940955 /* Pods_MovieReservationApplicationUITests.framework */;
+			productReference = 0680F46AD7F329CA002107EEE96F73EE /* Pods_MovieReservationApplicationUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		95D6B00FE29C1F39532F90A71189ECC4 /* Pods-MovieReservationApplication */ = {
+		61C120742CCDE13BA33321D091160055 /* SimpleKeychain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4231B57FD87228FAC34A13DE9CB3C1FA /* Build configuration list for PBXNativeTarget "Pods-MovieReservationApplication" */;
+			buildConfigurationList = 2E4EF69654E1AF05D4607248841DD753 /* Build configuration list for PBXNativeTarget "SimpleKeychain" */;
 			buildPhases = (
-				675D04E4E80F6D1DED7BF0E437E4C08E /* Sources */,
-				ED9F4535805B316779256A8E1F8BA126 /* Frameworks */,
-				5F5EE6FB21A5ABF5BD030B8B4E4F9651 /* Headers */,
+				71E696CD1B9041FEC43A6085F97655B4 /* Sources */,
+				48E9959243071072BCEE0734007DD178 /* Frameworks */,
+				B7C66382453F29862FD6C83B60C916C6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0C6F718F7F5C1BF1577E520D2744F3E9 /* PBXTargetDependency */,
-				8EB5DDFE6831480ABFDBB1A40D178C89 /* PBXTargetDependency */,
 			);
-			name = "Pods-MovieReservationApplication";
-			productName = "Pods-MovieReservationApplication";
-			productReference = 307155BC2ED26E76D6B90AF859430CE1 /* Pods_MovieReservationApplication.framework */;
+			name = SimpleKeychain;
+			productName = SimpleKeychain;
+			productReference = 8AF567EBBF51E9510EED7FD4943B5305 /* SimpleKeychain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CE6DF8396110E14E170035AE8233BFBB /* Pods-MovieReservationApplicationTests */ = {
@@ -550,7 +887,7 @@
 			);
 			name = "Pods-MovieReservationApplicationTests";
 			productName = "Pods-MovieReservationApplicationTests";
-			productReference = 82CEB5BE66D8DB20FC71FA575276F9A5 /* Pods_MovieReservationApplicationTests.framework */;
+			productReference = 9799C0ABEEB8DE4B2C4988CF176E476D /* Pods_MovieReservationApplicationTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */ = {
@@ -567,7 +904,25 @@
 			);
 			name = nanopb;
 			productName = nanopb;
-			productReference = 8DC6188353307D7539A2D86B7160AC82 /* nanopb.framework */;
+			productReference = 928E35FAF6020BFFAC5789225EAF1953 /* nanopb.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBF1F22AFDA4B3669F50FE5A2F4D5594 /* Auth0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5519092B7422765D9A670E5BB421F66F /* Build configuration list for PBXNativeTarget "Auth0" */;
+			buildPhases = (
+				27D42A483662A84BEC04F84AD76DFEDF /* Sources */,
+				D6871AF50BF1F80684A8A138EF206979 /* Frameworks */,
+				57AB49C3AB48E31730FD5ABCB4609722 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC8895B59E775639F1750E4B4CFA121B /* PBXTargetDependency */,
+			);
+			name = Auth0;
+			productName = Auth0;
+			productReference = E23A7E705E293928FE2DB63DF71C3817 /* Auth0.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -578,11 +933,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					00103D6C821BE85971C563025527BA5D = {
-						LastSwiftMigration = 0910;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -592,15 +942,17 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A791D0E7884130ACCF215AEBA4EA8F0D /* Products */;
+			productRefGroup = ADC35D30F3356B3E958BF4205890394F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				FBF1F22AFDA4B3669F50FE5A2F4D5594 /* Auth0 */,
 				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
 				E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */,
-				95D6B00FE29C1F39532F90A71189ECC4 /* Pods-MovieReservationApplication */,
+				09CEC8D14CC111A8F55101D600420762 /* Pods-MovieReservationApplication */,
 				CE6DF8396110E14E170035AE8233BFBB /* Pods-MovieReservationApplicationTests */,
 				3C2DCCFC406BA188AA3E88F23AF85975 /* Pods-MovieReservationApplicationUITests */,
+				61C120742CCDE13BA33321D091160055 /* SimpleKeychain */,
 			);
 		};
 /* End PBXProject section */
@@ -614,6 +966,63 @@
 				3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */,
 				54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */,
 				55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27D42A483662A84BEC04F84AD76DFEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3C4BEA00C6291C4B2170AA59F7491B /* _ObjectiveAuthenticationAPI.swift in Sources */,
+				BC9C565C6416A069CCEB26DBA7C11CCB /* _ObjectiveManagementAPI.swift in Sources */,
+				63241313517155AD974BA73C40275931 /* _ObjectiveWebAuth.swift in Sources */,
+				6CC31D290B668852B8C6334553B37FA8 /* A0ChallengeGenerator.m in Sources */,
+				10C9F9CD7364BAC887E664A18EE2AFEA /* Auth0-dummy.m in Sources */,
+				75FCEDCABB87C3523BCE2D7A0E56A241 /* Auth0.swift in Sources */,
+				9576482AA06DC77565EE878D900C4E4D /* Auth0Authentication.swift in Sources */,
+				730013A9D8546E42A5EDB1405C95DEF1 /* Auth0Error.swift in Sources */,
+				FB6A76DC5D2E21E05364E7AA19A53065 /* Authentication.swift in Sources */,
+				512D6B0A6E4718082639FC067B3D77B5 /* AuthenticationError.swift in Sources */,
+				F548370F6139EFBEE22B0200748E3A4C /* AuthProvider.swift in Sources */,
+				2C4C13D535CE227D3BED09DA65706976 /* AuthSession.swift in Sources */,
+				CB02819D85EAF3D5C683C3DA79075199 /* AuthTransaction.swift in Sources */,
+				7F4C489515F3D14CC04C9E9B9B6E87BD /* ControllerModalPresenter.swift in Sources */,
+				0A5E42A03840D954B028FF7777BA8669 /* Credentials.swift in Sources */,
+				54F7E0623F6269C8B928FEC1861E6F47 /* CredentialsManager.swift in Sources */,
+				29840DFFC29EB8B6B69A36A6B0592985 /* CredentialsManagerError.swift in Sources */,
+				A525E7BBC1E493314D9239ACCDD71312 /* Date.swift in Sources */,
+				BFF1BBF638B3A9DFA9280C9BE84ED4CF /* Handlers.swift in Sources */,
+				4C71A0639C2B616E87D9D01A1B6DCB6D /* Identity.swift in Sources */,
+				34335C43DA36452B56F2B1DC2F0D1354 /* JSONObjectPayload.swift in Sources */,
+				7903567F1EBCDE6E1F5CEC2563894678 /* Loggable.swift in Sources */,
+				010BF8BF1FDB11AFD712D0E3F61EC39D /* Logger.swift in Sources */,
+				B345C03BEAF4F39214B7BC255363811B /* Management.swift in Sources */,
+				34E6EB53EDF0D3B613103A7EA49E8069 /* ManagementError.swift in Sources */,
+				E768EE1126B85475CB903C79625DF2C3 /* NativeAuth.swift in Sources */,
+				3E3C2788DB1F22D9128231B1B06A418D /* NSData+URLSafe.swift in Sources */,
+				5D87AFA497DD3E39400F2E80E57D0E72 /* NSError+Helper.swift in Sources */,
+				49B9CAB2EDC4BF4F17AD876B0E5A7D66 /* NSURL+Auth0.swift in Sources */,
+				D276D86D4E796EE7FEE86C587F297570 /* NSURLComponents+OAuth2.swift in Sources */,
+				19BF8A21759F0A79013D8B33064375DA /* OAuth2Grant.swift in Sources */,
+				4C92315228EBA8159DA21128E8C7C007 /* Profile.swift in Sources */,
+				996A12F7A014EBA15361D605D5C0AC65 /* Request.swift in Sources */,
+				0B22E5A1E0EE68DE37563AC98FAA2231 /* Requestable.swift in Sources */,
+				353BE55CE7DDE641C6B284F319E117F4 /* Response.swift in Sources */,
+				4B18B76C7ED670447AD1ED3E25CBF2E9 /* ResponseType.swift in Sources */,
+				92EC3D97B9A48BC4C606C7A1375D141F /* Result.swift in Sources */,
+				CD536BA7069F5916C9D414A13C35C841 /* SafariAuthenticationCallback.swift in Sources */,
+				77C8D2DC44272F051F6C3D15342259C0 /* SafariAuthenticationSession.swift in Sources */,
+				C814A3F5EA0E1D36B04DFE69F4CF5BDF /* SafariSession.swift in Sources */,
+				6F9A74491C622EC773E7330856E85BE1 /* SafariWebAuth.swift in Sources */,
+				5E6F9910E5BA38EC4BE972F78A57F6A0 /* SilentSafariViewController.swift in Sources */,
+				E8235575ED5D223EB7FE958A7ED4838B /* Telemetry.swift in Sources */,
+				69DD7BCDBFE772B9B6C261088D760BA0 /* TouchAuthentication.swift in Sources */,
+				72A62217E56B59BAAC36BA94B6FDC52B /* TransactionStore.swift in Sources */,
+				64A44C93687E8B9C0EF5AA9670004C6A /* UserInfo.swift in Sources */,
+				C84FF500D71AFFB92DD263F030FA2D84 /* UserPatchAttributes.swift in Sources */,
+				AA2F022306A43F87362DA9A916FCA4BD /* Users.swift in Sources */,
+				6594430F361D43CF16CD0BDF31C89285 /* WebAuth.swift in Sources */,
+				A7F7767FD429D71C26BC27E5608CBBA8 /* WebAuthError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,28 +1051,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		675D04E4E80F6D1DED7BF0E437E4C08E /* Sources */ = {
+		6D249F8FF23D752E4903DE0AEB7116F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B73956C3258279B770F65AB0A69AAAA /* Pods-MovieReservationApplication-dummy.m in Sources */,
+				40DA0C98CFD9E42340BAF24BB554E2AD /* Pods-MovieReservationApplication-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E696CD1B9041FEC43A6085F97655B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4FB8456B6D92DC8E9E564B188431A1 /* A0SimpleKeychain+KeyPair.m in Sources */,
+				2FEE5CFE62A6819A36CF4402396555D9 /* A0SimpleKeychain.m in Sources */,
+				D0FC9BA32307D96CD11BFCDAEC11F7AC /* SimpleKeychain-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C6F718F7F5C1BF1577E520D2744F3E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GoogleToolboxForMac;
-			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
-			targetProxy = D7B83A628203AB8CA243884696367B74 /* PBXContainerItemProxy */;
-		};
-		8EB5DDFE6831480ABFDBB1A40D178C89 /* PBXTargetDependency */ = {
+		6C0495BFF37DCD42F5DC2FE2B1E5C1D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = nanopb;
 			target = E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */;
-			targetProxy = B9B7FEDC344B51F96221005F5D5CC7B9 /* PBXContainerItemProxy */;
+			targetProxy = 057AEE320B4F37C3119EE568583794B0 /* PBXContainerItemProxy */;
+		};
+		79C61D445A461A10E921A25D3F1554FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeychain;
+			target = 61C120742CCDE13BA33321D091160055 /* SimpleKeychain */;
+			targetProxy = 32FAEA1DCC245FCC8FD5FA89F1FA05D8 /* PBXContainerItemProxy */;
+		};
+		7A65D181C6C851CEC89A5BAF88957900 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Auth0;
+			target = FBF1F22AFDA4B3669F50FE5A2F4D5594 /* Auth0 */;
+			targetProxy = 2605C17CD06A809E51E9A2A710645A4A /* PBXContainerItemProxy */;
+		};
+		AC8895B59E775639F1750E4B4CFA121B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeychain;
+			target = 61C120742CCDE13BA33321D091160055 /* SimpleKeychain */;
+			targetProxy = 6111FD45FD2980CA8E4641210B429ABF /* PBXContainerItemProxy */;
+		};
+		BCCEEFD00E0589AFCD53619DD8CC74BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
+			targetProxy = CFB9F692476EA12E5F74E0056F95BA92 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -703,7 +1140,7 @@
 		};
 		15C069F155AD7CFEFD1E42E043D24C9F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F0A0B2F788848A43580C8F3FBBA24D7 /* nanopb.xcconfig */;
+			baseConfigurationReference = F6F59B6B805EC63573E8AA68D2E65AA8 /* nanopb.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -787,6 +1224,38 @@
 			};
 			name = Release;
 		};
+		1E1050B2527FBBEDA872A20C8852E0B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8AE40D20476D787ACFCA9A202B3D9D1 /* Auth0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Auth0/Auth0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Auth0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Auth0/Auth0.modulemap";
+				PRODUCT_NAME = Auth0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		418E0A7096306FE8209AE42838362D4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5BC6B1655F880E0E2416003215B142E7 /* Pods-MovieReservationApplicationUITests.debug.xcconfig */;
@@ -819,11 +1288,41 @@
 			};
 			name = Debug;
 		};
+		43D384C890FBB07E163DCE03FE328930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 758DCE6EE0880AA7252FA0FE27207F9C /* SimpleKeychain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleKeychain/SimpleKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain.modulemap";
+				PRODUCT_NAME = SimpleKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4FD46B2551582DF47CD95CD77DDF6B34 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D61D0D5052323E3EFCC00D50407A865E /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = 6EEEEB949246A1D890FBDF9ED3A15013 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -850,38 +1349,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		5ABADD4004C43DB1CACB5858A432C4FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF38E96C01ACF57955276112E67C5455 /* Pods-MovieReservationApplication.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MovieReservationApplication/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MovieReservationApplication/Pods-MovieReservationApplication.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MovieReservationApplication;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		5E3B1F10F45FA56666A5038F7FAB0E14 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -915,9 +1382,40 @@
 			};
 			name = Debug;
 		};
-		7C2135A4C4B53D1EA6C4CE59A976BC7B /* Release */ = {
+		6BE71065B9E97191410E1D0AB2D638BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1280EEC3E08AABCF15214DD42A8629A4 /* Pods-MovieReservationApplication.release.xcconfig */;
+			baseConfigurationReference = B8AE40D20476D787ACFCA9A202B3D9D1 /* Auth0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Auth0/Auth0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Auth0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Auth0/Auth0.modulemap";
+				PRODUCT_NAME = Auth0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		72E389A55778FDC9B33A95ABD35A0692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF38E96C01ACF57955276112E67C5455 /* Pods-MovieReservationApplication.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -941,12 +1439,13 @@
 				PRODUCT_NAME = Pods_MovieReservationApplication;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		995C3A53DEAA96B47E756185345E180D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1010,7 +1509,7 @@
 		};
 		9B08F59FF51AFF627CB714A7411CD158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F0A0B2F788848A43580C8F3FBBA24D7 /* nanopb.xcconfig */;
+			baseConfigurationReference = F6F59B6B805EC63573E8AA68D2E65AA8 /* nanopb.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1038,11 +1537,44 @@
 			};
 			name = Debug;
 		};
+		D06B3A4ED6058667D4304093B2611387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1280EEC3E08AABCF15214DD42A8629A4 /* Pods-MovieReservationApplication.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MovieReservationApplication/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MovieReservationApplication/Pods-MovieReservationApplication.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MovieReservationApplication;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D19459BBA4D29829D7678D9CDFE01E64 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D61D0D5052323E3EFCC00D50407A865E /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = 6EEEEB949246A1D890FBDF9ED3A15013 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1062,7 +1594,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1103,6 +1634,36 @@
 			};
 			name = Release;
 		};
+		F76019EE1D00C33915AC5862B7887B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 758DCE6EE0880AA7252FA0FE27207F9C /* SimpleKeychain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleKeychain/SimpleKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain.modulemap";
+				PRODUCT_NAME = SimpleKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1111,6 +1672,15 @@
 			buildConfigurations = (
 				995C3A53DEAA96B47E756185345E180D /* Debug */,
 				1D23278938ADF334174C5BF2A4B6B1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E4EF69654E1AF05D4607248841DD753 /* Build configuration list for PBXNativeTarget "SimpleKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76019EE1D00C33915AC5862B7887B52 /* Debug */,
+				43D384C890FBB07E163DCE03FE328930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1124,11 +1694,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4231B57FD87228FAC34A13DE9CB3C1FA /* Build configuration list for PBXNativeTarget "Pods-MovieReservationApplication" */ = {
+		5519092B7422765D9A670E5BB421F66F /* Build configuration list for PBXNativeTarget "Auth0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5ABADD4004C43DB1CACB5858A432C4FA /* Debug */,
-				7C2135A4C4B53D1EA6C4CE59A976BC7B /* Release */,
+				6BE71065B9E97191410E1D0AB2D638BC /* Debug */,
+				1E1050B2527FBBEDA872A20C8852E0B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621570BF1F877D6A4C9FA9FF6515641B /* Build configuration list for PBXNativeTarget "Pods-MovieReservationApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72E389A55778FDC9B33A95ABD35A0692 /* Debug */,
+				D06B3A4ED6058667D4304093B2611387 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
