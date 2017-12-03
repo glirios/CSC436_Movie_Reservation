@@ -7,6 +7,7 @@ target 'MovieReservationApplication' do
 
   # Pods for MovieReservationApplication 
   pod 'Firebase/Core'
+  pod 'Auth0', '~> 1.5'
 
   target 'MovieReservationApplicationTests' do
     inherit! :search_paths

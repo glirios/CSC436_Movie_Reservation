@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		77FCC4C56AEBC20C26A44965 /* Pods_MovieReservationApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB43F8800B66365EDC0CE96 /* Pods_MovieReservationApplicationTests.framework */; };
 		9F192A5C410B52FAB4BE2148 /* Pods_MovieReservationApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306261FD7B0E748935282E6D /* Pods_MovieReservationApplication.framework */; };
+		A6010F221FC5050400B527D9 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6010F211FC5050400B527D9 /* HomePage.swift */; };
+		A6340BB31FC519040026FECE /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6340BB21FC519040026FECE /* Auth0.plist */; };
 		BC4814AABAC5376DFF1C3875 /* Pods_MovieReservationApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8EC4C2945DF91E4CF3076 /* Pods_MovieReservationApplicationUITests.framework */; };
 		D7563FC71FD0729B00F0C131 /* Theatres.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7563FC61FD0729B00F0C131 /* Theatres.swift */; };
 		D7563FCB1FD084F200F0C131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7563FCA1FD084F200F0C131 /* LaunchScreen.storyboard */; };
@@ -52,6 +54,8 @@
 		781F9229DB15D321CFDFEFE7 /* Pods-MovieReservationApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieReservationApplicationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieReservationApplicationUITests/Pods-MovieReservationApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CB43F8800B66365EDC0CE96 /* Pods_MovieReservationApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieReservationApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BABC9F78852C6B92AD1EBA6 /* Pods-MovieReservationApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieReservationApplicationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieReservationApplicationTests/Pods-MovieReservationApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6010F211FC5050400B527D9 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		A6340BB21FC519040026FECE /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		CCA8EC4C2945DF91E4CF3076 /* Pods_MovieReservationApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieReservationApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7563FC61FD0729B00F0C131 /* Theatres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theatres.swift; sourceTree = "<group>"; };
 		D7563FCA1FD084F200F0C131 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 				D76B910E1FB7DABA00F940B4 /* PageContentViewController.swift */,
 				D78830031FB50CD2006DAD8F /* ViewController.swift */,
 				D79BB0D41FBB6B04002041E5 /* PageViewController.swift */,
+				A6010F211FC5050400B527D9 /* HomePage.swift */,
 			);
 			path = ViewControlers;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				D79BB0D61FBB6CD7002041E5 /* GoogleService-Info.plist */,
 				D78830081FB50CD2006DAD8F /* Assets.xcassets */,
 				D788300D1FB50CD2006DAD8F /* Info.plist */,
+				A6340BB21FC519040026FECE /* Auth0.plist */,
 			);
 			path = MovieReservationApplication;
 			sourceTree = "<group>";
@@ -327,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6340BB31FC519040026FECE /* Auth0.plist in Resources */,
 				D788300C1FB50CD2006DAD8F /* LaunchScreen.storyboard in Resources */,
 				D79BB0D71FBB6CD7002041E5 /* GoogleService-Info.plist in Resources */,
 				D78830091FB50CD2006DAD8F /* Assets.xcassets in Resources */,
@@ -488,12 +495,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MovieReservationApplication/Pods-MovieReservationApplication-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Auth0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleKeychain.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D78830041FB50CD2006DAD8F /* ViewController.swift in Sources */,
+				A6010F221FC5050400B527D9 /* HomePage.swift in Sources */,
 				D7563FC71FD0729B00F0C131 /* Theatres.swift in Sources */,
 				D79784AC1FCDE90D00AC550C /* Showtimes.swift in Sources */,
 				D79BB0D51FBB6B04002041E5 /* PageViewController.swift in Sources */,

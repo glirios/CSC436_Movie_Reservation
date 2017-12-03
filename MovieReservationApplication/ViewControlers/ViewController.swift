@@ -23,9 +23,35 @@ class ViewController: UIViewController {
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let request = URLRequest(url: URL(string: moviesCall)!)
         let task: URLSessionDataTask = session.dataTask(with: request) { (receivedData, response, error) -> Void in
-            
+
+            if error == nil, let data = receivedData {
+
+                // uncomment to print raw response
+                let rawDataString = String(data: data, encoding: String.Encoding.utf8)
+                print(rawDataString!)
+            }
+        }
+        task.resume()
+        let request2 = URLRequest(url: URL(string: reviewsCall)!)
+        let task2: URLSessionDataTask = session.dataTask(with: request2) { (receivedData, response, error) -> Void in
+
+
             if let data = receivedData {
+
+                // uncomment to print raw response
+                let rawDataString = String(data: data, encoding: String.Encoding.utf8)
+                print(rawDataString!)
+            }
+        }
+        task2.resume()
+      
+      
         
+    }
+
+    func jsonDrillDown(json : Any, indent: String) {
+        let ourIndent = indent + "\t"  
+            if let data = receivedData {
                 do {
                     
                     let decoder = JSONDecoder()
