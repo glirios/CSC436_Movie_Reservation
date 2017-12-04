@@ -10,11 +10,18 @@
 		77FCC4C56AEBC20C26A44965 /* Pods_MovieReservationApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB43F8800B66365EDC0CE96 /* Pods_MovieReservationApplicationTests.framework */; };
 		9F192A5C410B52FAB4BE2148 /* Pods_MovieReservationApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306261FD7B0E748935282E6D /* Pods_MovieReservationApplication.framework */; };
 		BC4814AABAC5376DFF1C3875 /* Pods_MovieReservationApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8EC4C2945DF91E4CF3076 /* Pods_MovieReservationApplicationUITests.framework */; };
+		D73635651FD605BB00C343AD /* ShowTimesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73635641FD605BB00C343AD /* ShowTimesTVCell.swift */; };
 		D7563FC71FD0729B00F0C131 /* Theatres.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7563FC61FD0729B00F0C131 /* Theatres.swift */; };
 		D7563FCB1FD084F200F0C131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7563FCA1FD084F200F0C131 /* LaunchScreen.storyboard */; };
 		D7563FCE1FD095F700F0C131 /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7563FCD1FD095F700F0C131 /* MovieAPI.swift */; };
 		D76B910D1FB7CA9500F940B4 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B910C1FB7CA9500F940B4 /* Movies.swift */; };
 		D76B910F1FB7DABA00F940B4 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B910E1FB7DABA00F940B4 /* PageContentViewController.swift */; };
+		D78716A41FD5E444008AA02F /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78716A31FD5E444008AA02F /* MapVC.swift */; };
+		D78716A61FD5EA81008AA02F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78716A51FD5EA81008AA02F /* MapKit.framework */; };
+		D78716A81FD5F441008AA02F /* MapLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78716A71FD5F441008AA02F /* MapLocation.swift */; };
+		D78716AA1FD604AF008AA02F /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78716A91FD604AF008AA02F /* MovieDetail.swift */; };
+		D78716AC1FD604EF008AA02F /* MovieResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78716AB1FD604EF008AA02F /* MovieResults.swift */; };
+		D78716AE1FD6051F008AA02F /* MovieTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78716AD1FD6051F008AA02F /* MovieTVCell.swift */; };
 		D78830021FB50CD2006DAD8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78830011FB50CD2006DAD8F /* AppDelegate.swift */; };
 		D78830041FB50CD2006DAD8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78830031FB50CD2006DAD8F /* ViewController.swift */; };
 		D78830071FB50CD2006DAD8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78830051FB50CD2006DAD8F /* Main.storyboard */; };
@@ -57,11 +64,18 @@
 		7CB43F8800B66365EDC0CE96 /* Pods_MovieReservationApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieReservationApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BABC9F78852C6B92AD1EBA6 /* Pods-MovieReservationApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieReservationApplicationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieReservationApplicationTests/Pods-MovieReservationApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CCA8EC4C2945DF91E4CF3076 /* Pods_MovieReservationApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieReservationApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73635641FD605BB00C343AD /* ShowTimesTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTimesTVCell.swift; sourceTree = "<group>"; };
 		D7563FC61FD0729B00F0C131 /* Theatres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theatres.swift; sourceTree = "<group>"; };
 		D7563FCA1FD084F200F0C131 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7563FCD1FD095F700F0C131 /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
 		D76B910C1FB7CA9500F940B4 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		D76B910E1FB7DABA00F940B4 /* PageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PageContentViewController.swift; path = MovieReservationApplication/ViewControlers/PageContentViewController.swift; sourceTree = SOURCE_ROOT; };
+		D78716A31FD5E444008AA02F /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapVC.swift; path = MovieReservationApplication/ViewControlers/MapVC.swift; sourceTree = SOURCE_ROOT; };
+		D78716A51FD5EA81008AA02F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D78716A71FD5F441008AA02F /* MapLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocation.swift; sourceTree = "<group>"; };
+		D78716A91FD604AF008AA02F /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		D78716AB1FD604EF008AA02F /* MovieResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResults.swift; sourceTree = "<group>"; };
+		D78716AD1FD6051F008AA02F /* MovieTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTVCell.swift; sourceTree = "<group>"; };
 		D7882FFE1FB50CD2006DAD8F /* MovieReservationApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieReservationApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78830011FB50CD2006DAD8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D78830031FB50CD2006DAD8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7DDD0C61FD38A1C0087FAB7 /* Auth0.framework in Frameworks */,
+				D78716A61FD5EA81008AA02F /* MapKit.framework in Frameworks */,
 				9F192A5C410B52FAB4BE2148 /* Pods_MovieReservationApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +130,7 @@
 		5A9A7C92A906390DDA785B20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D78716A51FD5EA81008AA02F /* MapKit.framework */,
 				D7DDD0C71FD38A1C0087FAB7 /* Auth0.framework */,
 				306261FD7B0E748935282E6D /* Pods_MovieReservationApplication.framework */,
 				7CB43F8800B66365EDC0CE96 /* Pods_MovieReservationApplicationTests.framework */,
@@ -148,6 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				D7DDD0C01FD386680087FAB7 /* HomePage.swift */,
+				D78716A91FD604AF008AA02F /* MovieDetail.swift */,
+				D78716AB1FD604EF008AA02F /* MovieResults.swift */,
+				D78716A31FD5E444008AA02F /* MapVC.swift */,
 				D76B910E1FB7DABA00F940B4 /* PageContentViewController.swift */,
 				D78830031FB50CD2006DAD8F /* ViewController.swift */,
 				D79BB0D41FBB6B04002041E5 /* PageViewController.swift */,
@@ -169,6 +188,9 @@
 			isa = PBXGroup;
 			children = (
 				D76B910C1FB7CA9500F940B4 /* Movies.swift */,
+				D78716AD1FD6051F008AA02F /* MovieTVCell.swift */,
+				D78716A71FD5F441008AA02F /* MapLocation.swift */,
+				D73635641FD605BB00C343AD /* ShowTimesTVCell.swift */,
 				D79784AB1FCDE90D00AC550C /* Showtimes.swift */,
 				D79784B11FCF90AA00AC550C /* Theatre.swift */,
 				D7563FC61FD0729B00F0C131 /* Theatres.swift */,
@@ -300,6 +322,11 @@
 					D7882FFD1FB50CD2006DAD8F = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					D78830111FB50CD2006DAD8F = {
 						CreatedOnToolsVersion = 9.1;
@@ -530,9 +557,15 @@
 				D79784AC1FCDE90D00AC550C /* Showtimes.swift in Sources */,
 				D79BB0D51FBB6B04002041E5 /* PageViewController.swift in Sources */,
 				D79784B21FCF90AA00AC550C /* Theatre.swift in Sources */,
+				D78716AE1FD6051F008AA02F /* MovieTVCell.swift in Sources */,
+				D78716A41FD5E444008AA02F /* MapVC.swift in Sources */,
 				D7DDD0C11FD386680087FAB7 /* HomePage.swift in Sources */,
+				D78716AC1FD604EF008AA02F /* MovieResults.swift in Sources */,
+				D78716A81FD5F441008AA02F /* MapLocation.swift in Sources */,
+				D78716AA1FD604AF008AA02F /* MovieDetail.swift in Sources */,
 				D76B910F1FB7DABA00F940B4 /* PageContentViewController.swift in Sources */,
 				D7563FCE1FD095F700F0C131 /* MovieAPI.swift in Sources */,
+				D73635651FD605BB00C343AD /* ShowTimesTVCell.swift in Sources */,
 				D78830021FB50CD2006DAD8F /* AppDelegate.swift in Sources */,
 				D76B910D1FB7CA9500F940B4 /* Movies.swift in Sources */,
 			);
