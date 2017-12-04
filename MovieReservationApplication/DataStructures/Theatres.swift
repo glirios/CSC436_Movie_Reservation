@@ -22,7 +22,7 @@ struct Theatres : Codable {
     }
     
     struct Location : Codable {
-        var distance : String
+        var distance : Double
         var telephone : String
         var geoCode : Coordinates
         var address : Address
@@ -33,7 +33,6 @@ struct Theatres : Codable {
             case geoCode
             case address
         }
-        
         
         struct Coordinates : Codable {
             var lat : String

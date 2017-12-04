@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageDownload: UIImageView!
     let moviesCall = "https://data.tmsapi.com/v1.1/movies/MV009897380000/showings?startDate=2017-12-03&zip=93405&api_key=fa4yd8erkydjmhdevq6zb8rz"
     var movieData : [Movies]?
     var API = MovieAPI()
@@ -20,33 +21,72 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print("Getting API Date format")
         print(API.getDate())
-        API.getMoviesPlayingLocally(startDate: "", zip: "93405", lat: "", lng: "") { movies in
-            self.movieData = movies
-            print(self.movieData?.count)
-        }
-        print(movieData?.count)
+//        API.getMoviesPlayingLocally(startDate: "", zip: "93405", lat: "", lng: "") { movies in
+//            self.movieData = movies
+//            print(self.movieData?.count)
+//        }
+//        print(movieData?.count)
         
-        let session = URLSession(configuration: URLSessionConfiguration.default)
-        let request = URLRequest(url: URL(string: moviesCall)!)
-        let task: URLSessionDataTask = session.dataTask(with: request) { (receivedData, response, error) -> Void in
-            
-            if let data = receivedData {
-                do {
-                    print("session started")
-                    let decoder = JSONDecoder()
-                    let array = try decoder.decode([Movies].self, from: data)
-                    print("data pulled")
-                    print(array.count)
-                    for movie in array {
-                        print(movie.title)
-                    }
-                    
-                } catch {
-                    print("Exception on Decode: \(error)")
-                }
+
+//        API.getMovieShowtimes(startDate: "", zip: "93405", lat: "", lng: "", movieId: "MV009897380000") { showtimes in
+//            for movie in showtimes {
+//                let title = movie.title
+//                for times in movie.showtimes {
+//                    print(title + " is playing at " + times.theatre.name + " at " + times.dateTime)
+//                }
+//            }
+//        }
+        
+//        API.getTheatreDetails(theatreId: "8749") { theatre in
+//            print(theatre)
+//        }
+        
+        API.getTheatres(zip: "93405", lat: "", lng: "", radius: "25") { theatres in
+            for theatre in theatres {
+                print(theatre.name)
+                print(theatre.id)
             }
         }
-        task.resume()
+//        while (movieData == nil) {
+//            print("waiting")
+//        }
+//        print("done waiting")
+//
+//        DispatchQueue.global(qos: .userInitiated).async {
+//
+//            let url = URL(string: "http://tmsimg.com/" + (self.movieData?.first?.imageURL.URL)!)
+//            print(url)
+//            let responseData = try? Data(contentsOf: url!)
+//            let downloadedImage = UIImage(data: responseData!)
+//
+//            DispatchQueue.main.async {
+//                self.imageDownload.image = downloadedImage
+//            }
+//
+//        }
+        
+        
+//        let session = URLSession(configuration: URLSessionConfiguration.default)
+//        let request = URLRequest(url: URL(string: moviesCall)!)
+//        let task: URLSessionDataTask = session.dataTask(with: request) { (receivedData, response, error) -> Void in
+//
+//            if let data = receivedData {
+//                do {
+//                    print("session started")
+//                    let decoder = JSONDecoder()
+//                    let array = try decoder.decode([Movies].self, from: data)
+//                    print("data pulled")
+//                    print(array.count)
+//                    for movie in array {
+//                        print(movie.title)
+//                    }
+//
+//                } catch {
+//                    print("Exception on Decode: \(error)")
+//                }
+//            }
+//        }
+//        task.resume()
         
     }
     

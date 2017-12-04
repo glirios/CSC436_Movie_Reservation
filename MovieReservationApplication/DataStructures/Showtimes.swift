@@ -9,13 +9,34 @@
 import Foundation
 
 struct Showtimes: Codable {
-    var barg : Int
-    var dateTime : String
-    var theatre : Theatre
-    
+    var showtimes : [Times]
+    var title : String
+    var id : String
     private enum CodingKeys : String, CodingKey {
-        case barg
-        case dateTime
-        case theatre
+        case showtimes
+        case title
+        case id = "tmsId"
+    }
+    
+    struct Times : Codable {
+        var theatre : Theatre
+        var dateTime : String
+        var barg : Int
+        
+        private enum CodingKeys : String, CodingKey {
+            case theatre
+            case dateTime
+            case barg
+        }
+        
+        struct Theatre : Codable {
+            var id : String
+            var name : String
+            
+            private enum CodingKeys : String, CodingKey {
+                case id
+                case name
+            }
+        }
     }
 }

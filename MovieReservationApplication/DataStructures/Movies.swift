@@ -74,7 +74,4 @@ struct Movies : Codable {
             case code
         }
     }
-    
-    
-    
 }
