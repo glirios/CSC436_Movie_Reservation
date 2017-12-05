@@ -8,8 +8,9 @@
 
 import UIKit
 import Auth0
+import TesseractOCR
 
-class HomePage: UIViewController, UISearchBarDelegate {
+class HomePage: UIViewController, UISearchBarDelegate, UINavigationControllerDelegate,UIImagePickerControllerDelegate, G8TesseractDelegate {
     
     @IBOutlet weak var featuredMovie: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
@@ -25,20 +26,25 @@ class HomePage: UIViewController, UISearchBarDelegate {
     var movieDataFiltered : [Movies]?
     var API = MovieAPI()
     var date : String!
+    var imageSearchName : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.sizeToFit()
+        searchBar.showsBookmarkButton = true
+        searchBar.setImage(UIImage(named: "cameraIcon"), for: UISearchBarIcon.bookmark, state: UIControlState.normal)
+        
         navigationItem.titleView = searchBar
+        
         updateCounter = 0
         pageControl.numberOfPages = 5
         timer = Timer.scheduledTimer(timeInterval: 3.5, target: self, selector:#selector(updateTimer), userInfo: nil, repeats: true)
         
         print("Getting API Date format")
-        print(API.getDate())
+        //print(API.getDate())
         API.getMoviesPlayingLocally(startDate: "", zip: "93405", lat: "", lng: "") { movies in
             self.movieData = movies
-            print(self.movieData?.count ?? 0)
+            //print(self.movieData?.count ?? 0)
         }
         movieDataFiltered = movieData
         searchBar.delegate = self
@@ -48,8 +54,6 @@ class HomePage: UIViewController, UISearchBarDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    
-    //  http://developer.tmsimg.com/
     @objc internal func updateTimer() {
         if (updateCounter <= 4) {
             pageControl.currentPage = updateCounter
@@ -68,6 +72,66 @@ class HomePage: UIViewController, UISearchBarDelegate {
             updateCounter = updateCounter + 1
         } else {
             updateCounter = 0
+        }
+    }
+    
+    func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
+        showImagePicker()
+    }
+    
+    func performImageRecog(image : UIImage) {
+        if let tesseract:G8Tesseract = G8Tesseract(language:"eng") {
+            tesseract.delegate = self
+            tesseract.charWhitelist = "01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            let inputImage = image
+            tesseract.image = inputImage.g8_blackAndWhite()
+            tesseract.recognize()
+            imageSearchName = tesseract.recognizedText
+        }
+        print("Found Text", imageSearchName)
+        movieDataFiltered = imageSearchName.isEmpty ? movieData : movieData?.filter { (item: Movies) -> Bool in
+            // If dataItem matches the searchText, return true to include it
+            return item.title.range(of: imageSearchName, options: .caseInsensitive, range: nil, locale: nil) != nil
+        }
+        
+        performSegue(withIdentifier: "showMovies", sender: self)
+    }
+    
+    func showImagePicker() {
+        let imagePickOptions = UIAlertController(title: "Add or Take Picture", message: nil, preferredStyle: .actionSheet)
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let cameraButton = UIAlertAction(title: "Take Picture", style: .default) {
+                (alert) -> Void in
+                let imagePicker = UIImagePickerController()
+                imagePicker.delegate = self
+                imagePicker.sourceType = .camera
+                self.present(imagePicker, animated: true)
+                
+            }
+            imagePickOptions.addAction(cameraButton)
+        }
+        
+        let uploadButton = UIAlertAction(title: "Upload Picture", style: .default) {
+            (alert) -> Void in
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary
+            self.present(imagePicker, animated: true)
+        }
+        imagePickOptions.addAction(uploadButton)
+        
+        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel)
+        imagePickOptions.addAction(cancelButton)
+        present(imagePickOptions, animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let selectedPhoto = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            dismiss(animated: true, completion: {
+                self.performImageRecog(image: selectedPhoto)
+            })
         }
     }
     
@@ -115,9 +179,7 @@ class HomePage: UIViewController, UISearchBarDelegate {
         }
         searched.text = movieDataFiltered?.description
     }
-    func getFilteredMovies() -> [Movies] {
-        return movieDataFiltered!
-    }
+    
     
     fileprivate func showSuccessAlert(_ accessToken: String) {
         let alert = UIAlertController(title: "Success", message: "accessToken: \(accessToken)", preferredStyle: .alert)

@@ -22,12 +22,10 @@ struct Theatre : Codable {
     }
     
     struct Location : Codable {
-        var telephone : String
         var geoCode : Coordinates
         var address : Address
         
         private enum CodingKeys : String, CodingKey {
-            case telephone
             case geoCode
             case address
         }
