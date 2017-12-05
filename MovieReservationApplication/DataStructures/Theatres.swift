@@ -23,13 +23,11 @@ struct Theatres : Codable {
     
     struct Location : Codable {
         var distance : Double
-        var telephone : String
         var geoCode : Coordinates
         var address : Address
-        
+
         private enum CodingKeys : String, CodingKey {
             case distance
-            case telephone
             case geoCode
             case address
         }

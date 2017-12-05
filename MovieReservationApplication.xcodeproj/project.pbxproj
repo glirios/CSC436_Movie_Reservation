@@ -11,6 +11,7 @@
 		9F192A5C410B52FAB4BE2148 /* Pods_MovieReservationApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306261FD7B0E748935282E6D /* Pods_MovieReservationApplication.framework */; };
 		BC4814AABAC5376DFF1C3875 /* Pods_MovieReservationApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8EC4C2945DF91E4CF3076 /* Pods_MovieReservationApplicationUITests.framework */; };
 		D73635651FD605BB00C343AD /* ShowTimesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73635641FD605BB00C343AD /* ShowTimesTVCell.swift */; };
+		D73635671FD631C500C343AD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73635661FD631C400C343AD /* CoreLocation.framework */; };
 		D7563FC71FD0729B00F0C131 /* Theatres.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7563FC61FD0729B00F0C131 /* Theatres.swift */; };
 		D7563FCB1FD084F200F0C131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7563FCA1FD084F200F0C131 /* LaunchScreen.storyboard */; };
 		D7563FCE1FD095F700F0C131 /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7563FCD1FD095F700F0C131 /* MovieAPI.swift */; };
@@ -65,6 +66,7 @@
 		9BABC9F78852C6B92AD1EBA6 /* Pods-MovieReservationApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieReservationApplicationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieReservationApplicationTests/Pods-MovieReservationApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CCA8EC4C2945DF91E4CF3076 /* Pods_MovieReservationApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieReservationApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73635641FD605BB00C343AD /* ShowTimesTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTimesTVCell.swift; sourceTree = "<group>"; };
+		D73635661FD631C400C343AD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D7563FC61FD0729B00F0C131 /* Theatres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theatres.swift; sourceTree = "<group>"; };
 		D7563FCA1FD084F200F0C131 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7563FCD1FD095F700F0C131 /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D73635671FD631C500C343AD /* CoreLocation.framework in Frameworks */,
 				D7DDD0C61FD38A1C0087FAB7 /* Auth0.framework in Frameworks */,
 				D78716A61FD5EA81008AA02F /* MapKit.framework in Frameworks */,
 				9F192A5C410B52FAB4BE2148 /* Pods_MovieReservationApplication.framework in Frameworks */,
@@ -130,6 +133,7 @@
 		5A9A7C92A906390DDA785B20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D73635661FD631C400C343AD /* CoreLocation.framework */,
 				D78716A51FD5EA81008AA02F /* MapKit.framework */,
 				D7DDD0C71FD38A1C0087FAB7 /* Auth0.framework */,
 				306261FD7B0E748935282E6D /* Pods_MovieReservationApplication.framework */,
@@ -531,6 +535,7 @@
 				"${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -538,6 +543,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Auth0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

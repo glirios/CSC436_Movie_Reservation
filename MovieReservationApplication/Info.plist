@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Allow access to photo library to upload image and search for movies using it</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow camera to take picture so that you can search movies using the picture</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Would like to use your location at all times to offer you the best help.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>MapKit starter needs your location so that you can see it on a map.</string>
 	<key>CFBundleDisplayName</key>
