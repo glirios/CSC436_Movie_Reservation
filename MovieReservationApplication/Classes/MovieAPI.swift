@@ -9,7 +9,7 @@
 import Foundation
 
 class MovieAPI {
-    private var Moviekey = "api_key=fa4yd8erkydjmhdevq6zb8rz"
+    private var Moviekey = "api_key="
     let ampersand = "&"
     let numDaysSring = "numDays="
     let startDateString = "startDate="
